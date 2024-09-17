@@ -1,5 +1,4 @@
-
-/* encabezado */
+/* Encabezado */
 #encabezado {
     display: flex;
     align-items: center; 
@@ -35,6 +34,63 @@
     font-weight: bold; 
     font-size: 1.1em;
 }
+
 #encabezado ul li a:hover {
     color: #ff00005d; /* Color del texto al pasar el ratón sobre el enlace */
+}
+
+
+
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #007bff; /* Mismo color de fondo que el encabezado */
+    color: white; /* Texto en blanco */
+    padding: 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido a lo largo del footer */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos de la lista */
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #ff00005d; /* Mismo efecto hover que en los enlaces del encabezado */
+}
+
+footer .copy {
+    text-align: center;
+    flex-basis: 100%; /* En pantallas pequeñas ocupa todo el ancho */
+    margin-top: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-icons a img {
+    width: 25px; /* Tamaño de los íconos */
+    height: 25px;
+    filter: invert(1); /* Hace que los íconos sean blancos */
+    transition: filter 0.3s ease;
+}
+
+footer .social-icons a:hover img {
+    filter: invert(0.6); /* Efecto hover para los íconos */
 }
