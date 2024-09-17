@@ -1,43 +1,53 @@
+body{
+    background-color: rgba(64, 207, 250, 0.643);
+}
 /* Encabezado */
 #encabezado {
     display: flex;
-    align-items: center; 
-    background-color: #007bff; 
-    color: white; 
-    padding: 10px 20px; 
+    align-items: center;
+    background-color: #258eff;
+    color: white;
+    padding: 10px 20px;
+    justify-content: space-between; /* Distribuye el contenido */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
 
 /* Estilo del logo */
 #logo {
     height: 80px;
-    margin-right: 30px; 
+    margin-right: 30px;
+    flex-shrink: 0; /* Evita que el logo se reduzca demasiado en pantallas pequeñas */
 }
 
 /* Estilo de la lista de navegación */
 #encabezado ul {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
-    align-items: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ajusta los elementos de la lista en pantallas pequeñas */
 }
 
 #encabezado ul li {
-    margin-left: 10%;
+    margin-left: 10%; 
+    flex-shrink: 1; /* Permite que los elementos se reduzcan en pantallas pequeñas */
 }
 
 #encabezado ul li a {
-    display: inline-block; 
-    padding: 10px; 
-    text-decoration: none; 
-    color: white; 
-    font-weight: bold; 
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
     font-size: 1.1em;
+    white-space: nowrap; /* Evita que el texto se corte en varias líneas */
 }
 
 #encabezado ul li a:hover {
     color: #ff00005d; /* Color del texto al pasar el ratón sobre el enlace */
 }
+
 
 
 
@@ -85,7 +95,7 @@ footer .social-icons {
 }
 
 footer .social-icons a img {
-    width: 25px; /* Tamaño de los íconos */
+    width: 25px; 
     height: 25px;
     filter: invert(1); /* Hace que los íconos sean blancos */
     transition: filter 0.3s ease;
