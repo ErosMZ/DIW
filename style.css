@@ -1,6 +1,17 @@
-body{
+/* Eliminar márgenes y relleno predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto */
+}
+
+/* Eliminar márgenes predeterminados del body */
+body {
+    margin: 0;
+    padding: 0;
     background-color: rgba(64, 207, 250, 0.643);
 }
+
 /* Encabezado */
 #encabezado {
     display: flex;
