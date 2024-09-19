@@ -15,10 +15,10 @@
 }
 
 .imagen img {
-    width: 100%; /* Ocupa todo el ancho de la celda del grid */
-    height: auto; /* Mantiene la relación de aspecto */
-    object-fit: cover; /* Ajusta la imagen para cubrir el área de la celda */
-    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: opacity 0.3s ease; 
 }
 
 /* Contenedor de texto superpuesto */
