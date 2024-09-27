@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #333;
+}
+
+th{
+    background-color: gray;
+}
+
+.CampoCambio{
+    background-color: #E6F3FF;
+}
+
+tr:nth-child(odd){
+    background-color: #FFFFCC;
+}
