@@ -1,9 +1,12 @@
 table {
     border-collapse: collapse;
+    
 }
 
 th, td {
     border: 1px solid #333;
+    text-align: center;
+    font-family: Arial;
 }
 
 th{
@@ -16,4 +19,12 @@ th{
 
 tr:nth-child(odd){
     background-color: #FFFFCC;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFFFCC;
+}
+
+tbody tr:hover td {
+    background-color: #FFFF66;
 }
