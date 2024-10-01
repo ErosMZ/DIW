@@ -21,28 +21,28 @@
 
 #imagenQuedada1 p {
     text-align: center;
-    margin: 20px 0 0 0;
+    margin-left: 120px;
 }
 
 /* Estilos generales del formulario */
 #formulario {
     max-width: 400px;
-    padding: 20px; /* Espaciado interno */
-    margin-left: 10%; /* Mantiene el margen del formulario */
-    background-color: #f9f9f9; /* Fondo suave */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; 
+    margin-left: 10%; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; 
     display: inline-block;
     margin-right: 5%;
 }
 
 /* Estilos del encabezado del formulario */
 #formulario h2 {
-    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    font-family: 'Arial', sans-serif; 
     font-size: 1.5em;
-    color: #333; /* Color de texto oscuro */
-    margin-bottom: 20px; /* Separación inferior */
-    text-align: center; /* Centra el texto */
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center; 
     letter-spacing: 1px; /* Espacio entre letras */
 }
 
