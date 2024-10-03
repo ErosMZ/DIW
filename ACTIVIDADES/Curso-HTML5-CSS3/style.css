@@ -1,0 +1,77 @@
+body{
+    background-image: url(./curso/imgs/old_map.png);
+    padding: 15px;
+}
+.cont-padre{
+    width: 1000px;
+}
+.cabezera{
+    
+    display: flex;
+    background-color: grey;
+    border-bottom: 7px solid black;
+    padding: 10px;
+    color: white;
+}
+.cabezera H1{
+    margin-left: 40px;
+}
+.cabezera img{
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+.subcabezera{
+    background-image: url(./curso/imgs/red015.jpg);
+}
+.subCabezera{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+ 
+}
+
+.subCabezera p:nth-child(2),
+.subCabezera p:nth-child(3) {
+  color: orange;
+  font-size: 25px;
+}
+.subCabezera p:nth-child(1){
+    color: azure;
+    font-size: 25px;
+}
+.principal{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./curso/imgs/lgrey008.jpg);
+    padding: 20px;
+}
+
+.subDiv{
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+
+    
+}
+.subDiv H3{
+    
+    border-bottom: 1px solid black;
+
+}
+.pieDePagina{
+    border-top: 10px solid black;
+    color: white;
+    height: 50px;
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+    padding: 15px;
+}
+.pieDePagina p{
+    margin-top: 0;
+}
+
