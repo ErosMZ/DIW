@@ -1,77 +1,168 @@
-body{
-    background-image: url(./curso/imgs/old_map.png);
+/* 
+Estilos generales del cuerpo (body)
+- Se establece un fondo con un degradado que va de blanco (#ffffff) a rojo (#ff0404).
+- El fondo no se repetirá y cubrirá todo el espacio disponible.
+- Se añade un relleno de 15px para que los elementos no toquen el borde del body.
+*/
+body {
+    background: linear-gradient(to top, #ffffff, #ff0404);
+    background-repeat: no-repeat; 
+    background-size: cover;
     padding: 15px;
 }
-.cont-padre{
+
+/* 
+Contenedor principal (page)
+- Se define el ancho máximo del contenedor como 1000px.
+*/
+#page {
     width: 1000px;
 }
-.cabezera{
-    
+
+/* 
+Estilos para el encabezado (header)
+- Se usa flexbox para organizar los elementos en línea.
+- Se aplica un fondo degradado de azul claro (#79b3ff) a azul oscuro (#005fec).
+- El borde inferior tiene 7px de grosor y es de color negro.
+- Se aplica relleno y color de texto blanco.
+- Se redondean las esquinas superiores del encabezado (20px).
+*/
+header {
     display: flex;
-    background-color: grey;
+    background: linear-gradient(to top, #79b3ff, #005fec);
     border-bottom: 7px solid black;
     padding: 10px;
     color: white;
+    border-radius: 20px 20px 0 0;
 }
-.cabezera H1{
+
+/* 
+Estilos para el título en el encabezado (h1)
+- Se le agrega un margen a la izquierda de 40px.
+*/
+header h1 {
     margin-left: 40px;
 }
-.cabezera img{
+
+/* 
+Estilos para la imagen en el encabezado
+- La imagen tendrá un ancho de 100px y el alto se ajustará automáticamente.
+- Se le agrega un margen izquierdo de 10px.
+*/
+header img {
     width: 100px;
     height: auto;
     margin-left: 10px;
 }
-.subcabezera{
-    background-image: url(./curso/imgs/red015.jpg);
-}
-.subCabezera{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
- 
+
+/* 
+Estilos para la barra de navegación (nav)
+- Se utiliza un fondo con un degradado que va de amarillo (#ffd413) a naranja claro (#ffbc65).
+*/
+nav {
+    background: linear-gradient(to top, #f8ad4b, #ffd000);
 }
 
-.subCabezera p:nth-child(2),
-.subCabezera p:nth-child(3) {
-  color: orange;
-  font-size: 25px;
+/* 
+Contenedor para los elementos dentro de la barra de navegación (contenidoNav)
+- Se utiliza flexbox para organizar los elementos en línea y distribuirlos equitativamente.
+- Se agregan márgenes laterales de 100px.
+*/
+.contenidoNav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-.subCabezera p:nth-child(1){
+
+/* 
+Estilos para los párrafos dentro de la barra de navegación (contenidoNav p)
+- El texto de los párrafos es de color blanco (azure) y tamaño de fuente 25px.
+*/
+.contenidoNav p {
     color: azure;
     font-size: 25px;
 }
-.principal{
+
+/* 
+Sección principal (main)
+- Se organiza el contenido utilizando flexbox para alinear los artículos uno junto al otro.
+- El fondo de la sección es blanco y se agrega un padding de 20px.
+*/
+main {
     display: flex;
     justify-content: space-between;
-    background-image: url(./curso/imgs/lgrey008.jpg);
+    background-color: white;
     padding: 20px;
 }
 
-.subDiv{
+/* 
+Estilos para los artículos (article)
+- Se centra el texto y se establece el tamaño de la fuente en 18px.
+- Se agregan márgenes y padding para la separación interna y externa.
+- El fondo es blanco.
+- Se utiliza la propiedad border-image para aplicar un borde de imagen (en este caso, una imagen de móvil).
+- El borde se redondea con border-radius.
+*/
+article {
     text-align: center;
     font-size: 18px;
     margin: 15px;
     padding: 5px;
-    text-align: center;
     background-color: white;
-
-    
+    border: solid;
+    border-image: url('./curso/imgs/movil.png') 30 stretch;
+    border-width: 70px 20px 50px 20px; 
+    border-image-slice: 70 20 50 20; 
+    width: 300px; 
+    border-radius: 100px; 
 }
-.subDiv H3{
-    
-    border-bottom: 1px solid black;
 
+/* 
+Estilos para los encabezados dentro de los artículos (article h3)
+- Se aplica una línea inferior con un borde de 1px de color negro.
+- Se añade una sombra al texto con desplazamiento y difuminado.
+- Se incrementa significativamente la separación entre las letras.
+*/
+article h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 6px 4px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
+    letter-spacing: 10px; /* Separación entre las letras */
 }
-.pieDePagina{
+
+/* 
+Estilos para el pie de página (footer)
+- Se define un borde superior grueso (10px) de color negro.
+- El color de fondo es un degradado de azul claro a azul oscuro.
+- El texto es de color blanco y está centrado.
+- Se redondean las esquinas inferiores del pie de página.
+*/
+footer {
     border-top: 10px solid black;
     color: white;
     height: 50px;
-    background-color: rgb(75, 75, 75);
+    background: linear-gradient(to bottom, #79b3ff, #005fec);
     text-align: center;
     padding: 15px;
+    border-radius: 0px 0px 20px 20px;
 }
-.pieDePagina p{
+
+/* 
+Estilos para los párrafos dentro del pie de página (footer p)
+- Se elimina el margen superior para ajustar el espacio dentro del pie de página.
+*/
+footer p {
     margin-top: 0;
 }
 
+/* 
+Aplicar un degradado radial a la imagen del artículo de Javascript
+- El fondo es un degradado radial desde el centro, que va de transparente a azul (#005fec).
+- Se añade un relleno de 10px alrededor de la imagen.
+- Se aplica un borde redondeado del 50% para crear un efecto circular.
+*/
+article:nth-of-type(3) img {
+    padding: 10px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0), rgba(0, 95, 236, 1));
+    border-radius: 50%; 
+}
