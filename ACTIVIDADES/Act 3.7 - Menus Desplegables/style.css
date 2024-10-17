@@ -1,0 +1,91 @@
+/* Color para los elementos del menú principal */
+ul li {
+    color: blue; 
+}
+
+/* Oculta inicialmente los submenús */
+ul li ul li {
+    max-height: 0; 
+    overflow: hidden; 
+}
+
+/* Estilo para el primer y último elemento del submenú con bordes redondeados */
+ul li:hover ul li:first-child {
+    position: relative; 
+    border-radius: 3px 3px 0 0; 
+}
+
+ul li:hover ul li:last-child {
+    position: relative; 
+    border-radius: 0 0 3px 3px; 
+}
+
+/* Reset de márgenes y padding para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del submenú: alineación, tamaño y fuente */
+ul li ul {
+    width: 100px; 
+    text-align: center;
+    z-index: 2; 
+    font-family: Verdana; 
+    font-size: 0.7em; 
+    position: absolute; 
+    left: 50%; 
+    margin-left: -50px; 
+    top: 25px;
+}
+
+/* Configuración básica para los enlaces del menú */
+ul li ul li a {
+    color: aliceblue; 
+    text-decoration: none; 
+}
+
+/* Transiciones suaves para la visibilidad del submenú */
+ul li:hover > ul li {
+    max-height: 150px; 
+    overflow: visible; 
+    transition: 0.4s linear; 
+}
+
+/* Flecha hacia abajo en el primer elemento del submenú */
+nav li ul:hover li:first-child:before {
+    content: ''; /* Crea el pseudo-elemento */
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    border: 5px solid transparent; 
+    border-bottom-color: #313131; 
+    left: 50%; 
+    top: -10px; 
+    margin-left: -5px; 
+}
+
+/* Estilo del menú principal */
+ul {
+    list-style: none; 
+    display: inline-block; 
+    padding: 20px 0;
+    margin: 0 80px; 
+    position: relative;
+}
+
+/* Estilo de los submenús cuando se hace hover sobre el menú principal */
+ul li:hover > ul li {
+    background-color: #444; 
+    padding: 12px;
+}
+
+/* Estilo más oscuro para el primer elemento del submenú */
+ul li:hover > ul li:nth-child(1) {
+    background-color: #363636; 
+}
+
+/* Estilo aún más oscuro al pasar el cursor sobre los elementos del submenú */
+ul li:hover > ul li:hover {
+    background-color: #313131; 
+}
