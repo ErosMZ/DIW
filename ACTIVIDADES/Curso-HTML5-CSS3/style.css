@@ -1,9 +1,4 @@
-/* 
-Estilos generales del cuerpo (body)
-- Se establece un fondo con un degradado que va de blanco (#ffffff) a rojo (#ff0404).
-- El fondo no se repetirá y cubrirá todo el espacio disponible.
-- Se añade un relleno de 15px para que los elementos no toquen el borde del body.
-*/
+/* Estilos generales del cuerpo (body) */
 body {
     background: linear-gradient(to top, #ffffff, #ff0404);
     background-repeat: no-repeat; 
@@ -11,22 +6,12 @@ body {
     padding: 15px;
 }
 
-/* 
-Contenedor principal (page)
-- Se define el ancho máximo del contenedor como 1000px.
-*/
+/* Contenedor principal (page) */
 #page {
-    width: 1000px;
+    width: 1300px;
 }
 
-/* 
-Estilos para el encabezado (header)
-- Se usa flexbox para organizar los elementos en línea.
-- Se aplica un fondo degradado de azul claro (#79b3ff) a azul oscuro (#005fec).
-- El borde inferior tiene 7px de grosor y es de color negro.
-- Se aplica relleno y color de texto blanco.
-- Se redondean las esquinas superiores del encabezado (20px).
-*/
+/* Estilos para el encabezado (header) */
 header {
     display: flex;
     background: linear-gradient(to top, #79b3ff, #005fec);
@@ -36,38 +21,24 @@ header {
     border-radius: 20px 20px 0 0;
 }
 
-/* 
-Estilos para el título en el encabezado (h1)
-- Se le agrega un margen a la izquierda de 40px.
-*/
+/* Estilos para el título en el encabezado (h1) */
 header h1 {
     margin-left: 40px;
 }
 
-/* 
-Estilos para la imagen en el encabezado
-- La imagen tendrá un ancho de 100px y el alto se ajustará automáticamente.
-- Se le agrega un margen izquierdo de 10px.
-*/
+/* Estilos para la imagen en el encabezado */
 header img {
     width: 100px;
     height: auto;
     margin-left: 10px;
 }
 
-/* 
-Estilos para la barra de navegación (nav)
-- Se utiliza un fondo con un degradado que va de amarillo (#ffd413) a naranja claro (#ffbc65).
-*/
+/* Estilos para la barra de navegación (nav) */
 nav {
     background: linear-gradient(to top, #f8ad4b, #ffd000);
 }
 
-/* 
-Contenedor para los elementos dentro de la barra de navegación (contenidoNav)
-- Se utiliza flexbox para organizar los elementos en línea y distribuirlos equitativamente.
-- Se agregan márgenes laterales de 100px.
-*/
+/* Contenedor para los elementos dentro de la barra de navegación */
 .contenidoNav {
     display: flex;
     justify-content: space-between;
@@ -75,20 +46,64 @@ Contenedor para los elementos dentro de la barra de navegación (contenidoNav)
     margin-right: 100px;
 }
 
-/* 
-Estilos para los párrafos dentro de la barra de navegación (contenidoNav p)
-- El texto de los párrafos es de color blanco (azure) y tamaño de fuente 25px.
-*/
+/* Estilos para los párrafos en la navegación */
 .contenidoNav p {
     color: azure;
     font-size: 25px;
+    text-shadow: 5px 5px 5px white;
+    position: relative; /* Necesario para el menú desplegable */
 }
 
-/* 
-Sección principal (main)
-- Se organiza el contenido utilizando flexbox para alinear los artículos uno junto al otro.
-- El fondo de la sección es blanco y se agrega un padding de 20px.
-*/
+/* Estilos para el menú desplegable (oculto por defecto) */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: none;
+    background-color: #e34c26;
+    width: 200px;
+    z-index: 1;
+    top: 30px;
+    left: 0;
+}
+
+/* Estilos para los elementos de la lista dentro del menú */
+.submenu li {
+    background-color: #e34c26;
+}
+
+.submenu li:nth-child(odd) {
+    background-color: #f06529; /* Para los elementos impares */
+}
+
+/* Estilos al pasar el ratón sobre los elementos del menú */
+.submenu li:hover {
+    background-color: #ff7e42;
+}
+
+/* Mostrar el menú al pasar el ratón por la opción Videos */
+.menu-videos:hover + .submenu {
+    display: block;
+}
+
+/* Estilos para los enlaces dentro del menú */
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Estilos cuando el ratón pasa sobre el enlace */
+.contenidoNav p:hover {
+    text-shadow: 2px 2px 0px red;
+    transition: 0.5s;
+}
+
+
+/* Sección principal (main) */
 main {
     display: flex;
     justify-content: space-between;
@@ -96,19 +111,12 @@ main {
     padding: 20px;
 }
 
-/* 
-Estilos para los artículos (article)
-- Se centra el texto y se establece el tamaño de la fuente en 18px.
-- Se agregan márgenes y padding para la separación interna y externa.
-- El fondo es blanco.
-- Se utiliza la propiedad border-image para aplicar un borde de imagen (en este caso, una imagen de móvil).
-- El borde se redondea con border-radius.
-*/
+/* Estilos para los artículos (article) */
 article {
     text-align: center;
     font-size: 18px;
     margin: 15px;
-    padding: 5px;
+    padding: 25px;
     background-color: white;
     border: solid;
     border-image: url('./curso/imgs/movil.png') 30 stretch;
@@ -116,27 +124,17 @@ article {
     border-image-slice: 70 20 50 20; 
     width: 300px; 
     border-radius: 100px; 
+    position: relative; /* Necesario para que la chincheta se posicione relativa al artículo */
 }
 
-/* 
-Estilos para los encabezados dentro de los artículos (article h3)
-- Se aplica una línea inferior con un borde de 1px de color negro.
-- Se añade una sombra al texto con desplazamiento y difuminado.
-- Se incrementa significativamente la separación entre las letras.
-*/
+/* Estilos para los encabezados dentro de los artículos (article h3) */
 article h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 3px 6px 4px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
     letter-spacing: 10px; /* Separación entre las letras */
 }
 
-/* 
-Estilos para el pie de página (footer)
-- Se define un borde superior grueso (10px) de color negro.
-- El color de fondo es un degradado de azul claro a azul oscuro.
-- El texto es de color blanco y está centrado.
-- Se redondean las esquinas inferiores del pie de página.
-*/
+/* Estilos para el pie de página (footer) */
 footer {
     border-top: 10px solid black;
     color: white;
@@ -147,22 +145,40 @@ footer {
     border-radius: 0px 0px 20px 20px;
 }
 
-/* 
-Estilos para los párrafos dentro del pie de página (footer p)
-- Se elimina el margen superior para ajustar el espacio dentro del pie de página.
-*/
+/* Estilos para los párrafos dentro del pie de página (footer p) */
 footer p {
     margin-top: 0;
 }
 
-/* 
-Aplicar un degradado radial a la imagen del artículo de Javascript
-- El fondo es un degradado radial desde el centro, que va de transparente a azul (#005fec).
-- Se añade un relleno de 10px alrededor de la imagen.
-- Se aplica un borde redondeado del 50% para crear un efecto circular.
-*/
+/* Aplicar un degradado radial a la imagen del artículo de Javascript */
 article:nth-of-type(3) img {
     padding: 10px;
     background: radial-gradient(circle, rgba(255, 255, 255, 0), rgba(0, 95, 236, 1));
     border-radius: 50%; 
+}
+
+/* Añadir las chinchetas directamente en los artículos mediante HTML */
+.chincheta {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+/* Ajustar la posición de cada chincheta para los distintos artículos */
+article:nth-of-type(1) .chincheta {
+    margin-top: -103px;
+    margin-left: 254px;
+}
+
+article:nth-of-type(2) .chincheta {
+    
+    margin-top: -103px;
+    margin-left: 135px;
+}
+
+article:nth-of-type(3) .chincheta {
+    background-image : none;
+    margin-top: -110px;
+    margin-left: 27px;
 }
