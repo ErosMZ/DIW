@@ -1,0 +1,103 @@
+/* Estilos para el reproductor de video */
+#reproductor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-right: 20px; /* Agregado para separación con la botonera */
+}
+
+/* Estilos para el video */
+#medio {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la barra de progreso */
+#barra {
+    width: 705px;
+    height: 16px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#progreso {
+    width: 0px;
+    height: 100%;
+    background: rgba(0, 0, 150, 0.2);
+    transition: width 0.3s ease;
+}
+
+/* Estilos para la barra de navegación de los botones */
+/* Estilos para la barra de navegación de los botones */
+.botonera {
+    display: flex;
+    flex-direction: column; /* Asegura que los botones se alineen en columna */
+    justify-content: flex-start;
+    align-items: center; /* Centra los items horizontalmente */
+    justify-content: flex-start;;
+    margin-top: 20px;
+}
+
+/* Estilos para los botones de control */
+.botonera input[type="button"] {
+    background-color: #ff5722; /* Cambiado a un naranja sólido */
+    border: 2px solid #b33c00;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.botonera input[type="button"]:hover {
+    background-color: #e64a19; /* Un tono más oscuro de naranja al pasar el cursor */
+    transform: scale(1.05);
+}
+
+
+/* Botón de volumen tiene tamaño diferente */
+.botonera input[type="button"]#menosVolumen,
+.botonera input[type="button"]#masVolumen {
+    padding: 5px 15px;
+}
+
+/* Estilo de los textos dentro del reproductor */
+.botonera label {
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Adaptaciones para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #reproductor {
+        width: 100%;
+    }
+
+    #medio {
+        width: 100%;
+    }
+
+    #barra {
+        width: 100%;
+    }
+
+    .botonera input[type="button"] {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+}
+main {
+    display: flex; /* Alinea el reproductor y la botonera horizontalmente */
+    align-items: flex-start; /* Alinea verticalmente al inicio */
+}
