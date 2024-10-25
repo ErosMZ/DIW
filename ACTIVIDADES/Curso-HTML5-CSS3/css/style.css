@@ -19,6 +19,7 @@ header {
     padding: 10px;
     color: white;
     border-radius: 20px 20px 0 0;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 /* Estilos para el título en el encabezado (h1) */
@@ -36,8 +37,16 @@ header img {
 /* Estilos para la barra de navegación (nav) */
 nav {
     background: linear-gradient(to top, #f8ad4b, #ffd000);
+    font-family: 'Luckiest Guy', cursive;
+}
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del elemento padre, si lo deseas */
 }
 
+a:hover {
+    text-decoration: none; /* También elimina el subrayado al pasar el ratón */
+}
 /* Contenedor para los elementos dentro de la barra de navegación */
 .contenidoNav {
     display: flex;
@@ -50,8 +59,14 @@ nav {
 .contenidoNav p {
     color: azure;
     font-size: 25px;
-    text-shadow: 5px 5px 5px white;
+    text-shadow: 2px 2px 0px #f06529; /* Sombra normal */
     position: relative; /* Necesario para el menú desplegable */
+}
+
+/* Estilos cuando el ratón pasa sobre el enlace */
+.contenidoNav p:hover {
+    text-shadow: 0px 0px 5px #ff7e42; /* Sombra en hover */
+    transition: 0.5s;
 }
 
 /* Estilos para el menú desplegable (oculto por defecto) */

@@ -34,35 +34,34 @@
         </nav>
         <!-- Contenido principal -->
         <!-- Contenido principal -->
-<main style="display: flex; align-items: flex-start;"> <!-- Agregado display: flex -->
-    <!-- Reproductor de video -->
-    <div id="reproductor">
-        <video id="medio" width="720" height="400" controls>
-            <source src="media/trailer.mp4" type="video/mp4">
-            <source src="media/trailer.ogg" type="video/ogg">
-            Tu navegador no soporta videos HTML5.
-        </video>
-        <div id="barra">
-            <div id="progreso"></div>
-        </div>
-    </div>
-
-    <!-- Controles del reproductor -->
-    <div class="botonera"> <!-- Cambiado de <botonera> a <div class="botonera"> -->
-        <input type="button" id="reiniciar" value="Reiniciar">
-        <input type="button" id="retrasar" value="«">
-        <input type="button" id="play" value="▶">
-        <input type="button" id="adelantar" value="»">
-        <input type="button" id="silenciar" value="Silenciar">
-        <label for="volumen">Volumen</label>
-        <input type="button" id="menosVolumen" value="-">
-        <input type="button" id="masVolumen" value="+">
-    </div>
-</main>
-
-
+        <main style="display: flex; align-items: flex-start;"> <!-- Agregado display: flex -->
+            <!-- Reproductor de video -->
+            <div id="reproductor" style="display: flex;"> <!-- Agregado display: flex para alinear -->
+                <div>
+                    <video id="medio" width="720" height="400" controls>
+                        <source src="media/trailer.mp4" type="video/mp4">
+                        <source src="media/trailer.ogg" type="video/ogg">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                    <div id="barra">
+                        <div id="progreso"></div>
+                    </div>
+                </div>
+        
+                <!-- Controles del reproductor -->
+                <div class="botonera">
+                    <input type="button" id="reiniciar" value="Reiniciar">
+                    <input type="button" id="retrasar" value="«">
+                    <input type="button" id="play" value="▶">
+                    <input type="button" id="adelantar" value="»">
+                    <input type="button" id="silenciar" value="Silenciar">
+                    <label for="volumen">Volumen</label>
+                    <input type="button" id="menosVolumen" value="-">
+                    <input type="button" id="masVolumen" value="+">
+                </div>
+            </div>
         </main>
-
+        
         <!-- Pie de página -->
         <footer>
             <b>HTML y CSS</b>
