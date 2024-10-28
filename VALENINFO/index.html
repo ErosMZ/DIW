@@ -4,61 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleInicio.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleInicio.css">
     <link rel="icon" type="image/jpg" href="foto-logo.png"/>
 </head>
 <body>
-    <div id="encabezado">
-        <img src="foto-logo.png" alt="Logo" id="logo">
+    <header>
+        <img src="/img/foto-logo.png" alt="Logo" id="logo">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="QuienesSomos.html">Quienes somos</a></li>
-            <li><a href="inscripciones.html">Inscripciones</a></li>
+            <li><a href="inscripciones.html">Inscripciones</a>
+                <ul class="submenu">
+                    <li><a href="inscripcion1.html">Web</a></li>
+                    <li><a href="inscripcion2.html">Multiplataforma</a></li>
+                    <li><a href="inscripcion3.html">Redes</a></li>
+                    <li><a href="inscripcion3.html">Ciberseguridad</a></li>
+                </ul>
+            </li>
             <li><a href="#">Contacto</a></li>
         </ul>
-    </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <h2>Navegación</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="QuienesSomos.html">Quienes somos</a></li>
+                <li><a href="inscripciones.html">Inscripciones</a></li>
+                <li><a href="#">Contacto</a></li>
+                <p>a</p>
+                <p>a</p>
+                <p>a</p>
+                <p>a</p>
+                <p>a</p>
+                <p>a</p>
+                <pa></p>
+            </ul>
+        </aside>
+        <section>
+            <img src="/img/foto-c++Inicio.png" alt="C++">
+            <img src="/img/foto-pythonInicio.jpg" alt="Python">
+            <img src="/img/foto-JavaInicio.jpeg" alt="Java">
+            <img src="/img/foto-javascriptInicio.jpg" alt="JavaScript">
+        </section>
+        <section class="video-section">
+            
+            <video controls class="video">
+                <source src="/img/videoPresentacion.mp4" type="video/mp4"> <!-- Cambia 'tu-video.mp4' por el nombre de tu archivo de video -->
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+        
+    </main>
 
-    <div class="imagenes">
-        <div class="imagen">
-            <img src="foto-c++Inicio.png" alt="C++">
-            <div class="overlay"><p><h1>C++</h1></p> <br> <br> 
-               <p> Lenguaje de programación orientado a objetos muy potente</p>
-            </div>
-        </div>
-        <div class="imagen">
-            <img src="foto-pythonInicio.jpg" alt="Python">
-            <div class="overlay"><p><h1>Python</h1></p> <br> <br>
-            <p>Lenguaje de programación ampliamente utilizado en las aplicaciones web y el desarrollo de software</p>
-            </div>
-        </div>
-        <div class="imagen">
-            <img src="foto-JavaInicio.jpeg" alt="Java">
-            <div class="overlay"><p><h1>Java</h1></p> <br> <br> 
-            <p>Lenguaje de programación multiplataforma orientado a objetos. Aplicaciones, S.O de smartphones,
-            software empresarial...</p>
-            </div>
-        </div>
-        <div class="imagen">
-            <img src="foto-javascriptInicio.jpg" alt="JavaScript" width="100%" height="100%">
-            <div class="overlay"></p><h1>JavaScript</h1><p>
-                <p>Lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. </p>
-            </div>
-        </div>
-    </div>
     <footer>
         <ul>
             <li><a href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal">Política de privacidad</a></li>
             <li><a href="https://www.iubenda.com/es/help/37616-que-son-los-terminos-y-condiciones-y-para-que-sirven">Términos y condiciones</a></li>
-            
         </ul>
-
         <div class="social-icons">
-            <a href="https://es.wikipedia.org/wiki/Facebook"><img src="foto-facebook.91f8693c-c75b-4050-a796-63e1314d18c9" alt="Facebook"></a>
-            <a href="https://es.wikipedia.org/wiki/Twitter"><img src="foto-twiter.png" alt="Twitter"></a>
-            <a href="https://es.wikipedia.org/wiki/Instagram"><img src="foto-ig.webp" alt="Instagram"></a>
+            <a href="https://github.com/ErosMZ/DIW.git"><img src="/img/github.jfif" alt=""></a>
+            <a href="https://es.wikipedia.org/wiki/Facebook"><img src="/img/foto-facebook.91f8693c-c75b-4050-a796-63e1314d18c9" alt="Facebook"></a>
+            <a href="https://es.wikipedia.org/wiki/Twitter"><img src="/img/foto-twiter.png" alt="Twitter"></a>
+            <a href="https://es.wikipedia.org/wiki/Instagram"><img src="/img/foto-ig.webp" alt="Instagram"></a>
         </div>
-
         <div class="copy">
             &copy; 2024 Asociación de Informaticos en Valencia.
         </div>
