@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles1.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Reproductor de Video</title>
+</head>
+<body>
+    <div id="page">
+        <!-- Encabezado -->
+        <header>
+            <img src="./curso/imgs/logo.png" alt="Logo del curso">
+            <h1>Curso de HTML5 y CSS3</h1>
+        </header>
+        <nav>
+            <div class="contenidoNav">
+                <img src="./curso/imgs/book.png" alt="">
+                <img src="./curso/imgs/film.png" alt="">
+                <img src="./curso/imgs/mail.png" alt="">
+            </div>
+            <div class="contenidoNav">
+                <p>Contenidos</p>
+                <p class="menu-videos">Videos</p>
+                <ul class="submenu">
+                    <li><a href="./videos.html">Vídeos1</a></li>
+                    <li><a href="./videos.html">Vídeos2</a></li>
+                    <li><a href="./videos.html">Vídeos3</a></li>
+                </ul>
+                <p>Contacto</p>
+            </div>
+        </nav>
+        <!-- Contenido principal -->
+        <!-- Contenido principal -->
+        <main style="display: flex; align-items: flex-start;"> <!-- Agregado display: flex -->
+            <!-- Reproductor de video -->
+            <div id="reproductor" style="display: flex;"> <!-- Agregado display: flex para alinear -->
+                <div>
+                    <video id="medio" width="720" height="400" controls>
+                        <source src="media/trailer.mp4" type="video/mp4">
+                        <source src="media/trailer.ogg" type="video/ogg">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                    <div id="barra">
+                        <div id="progreso"></div>
+                    </div>
+                </div>
+        
+                <!-- Controles del reproductor -->
+                <div class="botonera">
+                    <input type="button" id="reiniciar" value="Reiniciar">
+                    <input type="button" id="retrasar" value="«">
+                    <input type="button" id="play" value="▶">
+                    <input type="button" id="adelantar" value="»">
+                    <input type="button" id="silenciar" value="Silenciar">
+                    <label for="volumen">Volumen</label>
+                    <input type="button" id="menosVolumen" value="-">
+                    <input type="button" id="masVolumen" value="+">
+                </div>
+            </div>
+        </main>
+        
+        <!-- Pie de página -->
+        <footer>
+            <b>HTML y CSS</b>
+            <p>Diseño de interfaces web - 2DAW</p>
+        </footer>
+    </div>
+
+    <!-- Script para manejar los controles del video -->
+    <script src="./js/reproductor.js"></script>
+</body>
+</html>

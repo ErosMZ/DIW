@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Curso de HTML Y CSS3</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <img src="./curso/imgs/logo.png" alt=""><h1>Curso de HTML y CSS3</h1>
+        </header>
+        <nav>
+            <div class="contenidoNav">
+                <img src="./curso/imgs/book.png" alt="">
+                <img src="./curso/imgs/film.png" alt="">
+                <img src="./curso/imgs/mail.png" alt="">
+            </div>
+            <div class="contenidoNav">
+                <p>Contenidos</p>
+                <p class="menu-videos">Videos</p>
+                <ul class="submenu">
+                    <li><a href="./videos.html">Vídeos1</a></li>
+                    <li><a href="./videos.html">Vídeos2</a></li>
+                    <li><a href="./videos.html">Vídeos3</a></li>
+                </ul>
+                <a href="./contacto.html"> <p>Contacto</p></a>
+            </div>
+        </nav>
+        <main>
+            <!-- Se agrega la imagen de la chincheta dentro de cada article -->
+            <article>
+                <div class="chincheta"></div>
+                <img class="chincheta" id="chincheta1" src="./curso/imgs/chincheta.png" alt="Chincheta">
+                <img src="./curso/imgs/html5.png" alt="">
+                <h3>HTML5</h3>
+                <span>Veremos los nuevos <b>elementos estructurales</b>, así como los nuevos elementos existentes para <b>formularios, audio y video.</b> <br> El nuevo <b>elemento canvas</b> nos abre un mundo de posibilidades en el <b>desarrollo de videojuegos</b> web.</span>
+            </article>
+            <article>
+                <img class="chincheta" id="chincheta2" src="./curso/imgs/chincheta.png" alt="Chincheta">
+                <img src="./curso/imgs/css3.png" alt="">
+                <h3>CSS3</h3>
+                <span>Mejoraremos nuestros diseños web utilizando las nuevas características de CSS3: <b>efectos, transformaciones, animaciones</b>, etc. <br> Con <b>CSS3</b> nuestros diseños serán más simples, pero no menos impactantes.</span>
+            </article>
+            <article>
+                <img class="chincheta" id="chincheta3" src="./curso/imgs/chincheta.png" alt="Chincheta">
+                <img src="./curso/imgs/javascript.png" alt="">
+                <h3>Javascript</h3>
+                <span>Junto con HTML5 aparecen nuevas API javascript que nos aportan multitud de facilidades y posibilidades en el desarrollo de nuestros proyectos web. <br> Con las nuevas <b>API javascript</b> nuestras manos dejarán de estar atadas.</span>
+            </article>
+        </main>
+        <footer><b>HTML y CSS</b>
+            <p>Diseño de interfaces web - 2DAW</p>
+        </footer>
+    </div>
+    <script src="./css/animación.js"></script>
+</body>
+</html>
