@@ -14,7 +14,7 @@ body {
 
 /* Estilos para el submenú */
 .submenu {
-    width: 160px;
+    width: 180px;
     display: none; /* Oculta el submenú por defecto */
     position: absolute; /* Hace que el submenú se posicione de manera absoluta */
     background-color: #258eff7a; /* Color de fondo del submenú */
