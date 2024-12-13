@@ -10,6 +10,28 @@ body {
 #page {
     width: 1300px;
 }
+@media (max-width: 1024px) {
+  
+    /* Estilo para el div con id="page" */
+    #page {
+      width: 90%;
+      min-width: 320px;
+    }
+  
+    /* Estilo para el header */
+    header {
+      font-size: 0.7em;
+    }
+  
+    /* Estilo para los elementos <li> dentro del menú de navegación */
+    nav li {
+      margin-top: 0%;
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 2%;
+    }
+}
+
 
 /* Estilos para el encabezado (header) */
 header {
