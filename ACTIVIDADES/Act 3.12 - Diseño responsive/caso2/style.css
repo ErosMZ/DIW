@@ -1,0 +1,29 @@
+
+
+#div{
+    background-color: aqua;
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#padre{
+    display: flex;
+    background-color: antiquewhite;
+
+}
+
+@media (max-width: 800px) {
+    #padre{
+        display: block;
+        width: auto;
+        
+    }
+
+    .div {
+        display: block;
+        
+        
+    }
+}
