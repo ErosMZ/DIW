@@ -32,6 +32,19 @@ body {
     }
 }
 
+@media (max-width: 700px){
+    nav li{
+        margin: 0px;
+        margin-top: 8%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+}
+
+@media (max-width: 475px){
+
+}
 
 /* Estilos para el encabezado (header) */
 header {
@@ -285,7 +298,7 @@ header img{
         left: 0px;
     }
     100% {
-        left: 30px; /* Ajusta la posición según sea necesario */
+        left: 30px; 
     }
 }
 
@@ -293,13 +306,13 @@ header img{
     animation: mueveChincheta3 1s ease-in-out forwards;
 }
 
-/* Animación para el tercer <article> */
+
 @keyframes animArticle3 {
     0% {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(2deg); /* Rotación hacia los 2 grados */
+        transform: rotate(2deg);
     }
 }
 
@@ -308,3 +321,33 @@ header img{
 }
 
 
+@media (max-width: 475px) {
+    nav ul {
+        display: none; /* Ocultar el menú por defecto */
+    }
+
+    nav a.hamburguesa {
+        display: block; 
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+        font-size: 30px; 
+        color: #000; 
+        cursor: pointer; 
+    }
+
+    nav ul.activo {
+        display: block; 
+        position: absolute; 
+        top: 50px; 
+        left: 0; 
+        width: 100%; 
+        background-color: #f8ad4b; 
+    }
+
+    nav ul li {
+        text-align: center; 
+        padding: 10px 0; 
+        border-bottom: 1px solid #ddd; 
+    }
+}
