@@ -1,0 +1,141 @@
+/* Estilos generales para el main */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Anchura máxima para contenido centrado */
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo para el título principal */
+main h1 {
+    text-align: center;
+    color: #258eff; /* Color azul para resaltar */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilo para los párrafos introductorios */
+main p {
+    text-align: justify;
+    color: #333; /* Color gris oscuro */
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilo para las secciones */
+main section {
+    margin-bottom: 30px;
+}
+
+/* Estilo para títulos de las secciones */
+main section h2 {
+    color: #0056b3; /* Azul más oscuro */
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    text-decoration: underline; /* Subrayado para destacar */
+}
+
+/* Estilo para las listas */
+main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces */
+main a {
+    color: #258eff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre campos */
+    padding: 15px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fondo gris muy claro */
+}
+
+/* Estilo para las etiquetas del formulario */
+form label {
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para los campos de texto y textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Efecto de profundidad */
+}
+
+/* Estilo para el botón de envío */
+form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #258eff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilo para las redes sociales */
+main .redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .redes-sociales ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+main .redes-sociales li a {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #258eff7a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main .redes-sociales li a:hover {
+    background-color: #0056b3;
+    color: white;
+}
