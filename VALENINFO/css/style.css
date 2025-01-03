@@ -50,6 +50,7 @@ header ul li:hover .submenu {
 
 /* Encabezado */
 header {
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: #258eff;
@@ -150,3 +151,49 @@ footer .social-icons a img {
 footer .social-icons a:hover img {
     filter: invert(0.6); /* Efecto hover para los íconos */
 }
+
+
+@media (max-width: 768px) {
+    /* Centrar el menú en dispositivos móviles */
+    header ul {
+        flex-direction: column; /* Cambia la disposición a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 15px; /* Añade espacio entre los elementos */
+    }
+
+    header ul li {
+        margin: 0; /* Elimina márgenes adicionales */
+    }
+
+    header ul li a {
+        padding: 10px 20px; 
+        font-size: 1em; 
+        text-align: center; /* Centra el texto dentro del enlace */
+        border: 2px solid #0056b3; /* Añade borde alrededor del enlace */
+        border-radius: 5px; /* Bordes redondeados para efecto de botón */
+        color: #0056b3; /* Color del texto */
+        background-color: white; 
+        transition: all 0.3s ease; /* Transición  para hover */
+        display: inline-block; /* Asegura que el enlace se comporte como un bloque en línea */
+    }
+
+    /* Cambiar el color al pasdar el raton*/
+    header ul li a:hover {
+        background-color: #0056b3;
+        color: white; 
+    }
+
+    /* Ajuste del submenú */
+    .submenu {
+        position: relative; /* Cambia la posición para evitar problemas de desplazamiento */
+        width: 100%; /* Asegura que el submenú ocupe todo el ancho disponible */
+        text-align: center; /* Centra los elementos del submenú */
+    }
+
+    .submenu li a {
+        padding: 10px; /* Aumenta el relleno para facilitar el clic en móviles */
+        border: 1px solid #258eff; /* Borde más claro para submenús */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+}
+
