@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleContacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <a href="ingles-index.html"><img src="../img/foto-logo.png" alt="Logo" id="logo" class="animated-logo"></a>
+        <ul>
+            <li><a href="ingles-index.html">Home</a></li>
+            <li><a href="ingles-QuienesSomos.html">About Us</a></li>
+            <li><a href="ingles-inscripciones.html">Registrations</a>
+                <ul class="submenu">
+                    <li><a href="ingles-inscripcionWeb.html">Web</a></li>
+                    <li><a href="ingles-inscripcionMulti.html">Multiplatform</a></li>
+                    <li><a href="ingles-inscripcionRedes.html">Networks</a></li>
+                    <li><a href="ingles-inscripcionCiber.html">Cybersecurity</a></li>
+                </ul>
+            </li>
+            <li><a href="ingles-contacto.html" class="active">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <p>If you want to get in touch with us, use one of the options below:</p>
+        
+        <section>
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Phone:</strong> +34 123 456 789</li>
+                <li><strong>Email:</strong> <a href="mailto:admin@valeninfo.com">admin@valeninfo.com</a></li>
+                <li><strong>Address:</strong> Valencia, Spain</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="process-contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Message..." required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Social Media</h2>
+            <p>Follow us on social media to stay updated with our activities:</p>
+            <ul>
+                <li><a href="https://github.com/ErosMZ/DIW.git">GitHub</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Facebook">Facebook</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Twitter">Twitter</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Instagram">Instagram</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal">Privacy Policy</a></li>
+            <li><a href="https://www.iubenda.com/es/help/37616-que-son-los-terminos-y-condiciones-y-para-que-sirven">Terms and Conditions</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://github.com/ErosMZ/DIW.git"><img src="../img/github.jfif" alt=""></a>
+            <a href="https://es.wikipedia.org/wiki/Facebook"><img src="../img/foto-facebook.91f8693c-c75b-4050-a796-63e1314d18c9" alt="Facebook"></a>
+            <a href="https://es.wikipedia.org/wiki/Twitter"><img src="../img/foto-twiter.png" alt="Twitter"></a>
+            <a href="https://es.wikipedia.org/wiki/Instagram"><img src="../img/foto-ig.webp" alt="Instagram"></a>
+        </div>
+        <div class="copy">
+            &copy; 2024 Association of Computer Scientists in Valencia.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+    
+    width: 100%;
+    margin: 0;
+}
+.video-section {
+    text-align: center; 
+    margin: 20px 0; /* espacio superior y inferior */
+    width: calc(100% - 220px); /* resta el espacio de la barra lateral */
+    margin-left: 5%;
+}
+
+
+
+/* Estilo del video */
+.video {
+    width: 100%; 
+    max-width: auto; 
+    height: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+}
+
+/* Efecto hover para el video */
+.video:hover {
+    transform: scale(1.05); 
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    float: left;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    margin-top: 0px;
+    height: 700px;
+    margin-left: 0;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #ccc;
+}
+
+/* Estilos para la galería de imágenes */
+section {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    margin-left: 20px; /* Espacio entre la galería y la barra lateral */
+    float: left;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 1s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.buscador-barra {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch;
+}
+
+.buscador-input {
+    width: 100%; 
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem; /* Espacio entre el input y el botón */
+}
+
+.buscador-boton {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    padding: 0.5rem 1rem;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.buscador-boton:hover {
+    background-color: #005bb5;
+}
+
+/* Ajuste específico para dispositivos móviles */
+@media (max-width: 768px) {
+    .buscador-barra {
+        margin-bottom: 1rem; 
+        width: 100%; 
+    }
+
+    .buscador-input, 
+    .buscador-boton {
+        width: 100%; 
+    }
+}
+
+
+.language-selector {
+    display: flex;
+    justify-content: space-between; /* espacio entre los elementos*/
+    align-items: center;
+    margin-top: 20px;
+}
+
+.language-selector .flag {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    cursor: pointer; /* muestra el cursor de la mano */
+    transition: transform 0.3s ease; 
+}
+
+.language-selector .flag:hover {
+    transform: scale(1.1); /* hace mas grande la imagen al pasar el ratón */
+}
+
+
+ /*media query para el tamaño movil*/
+@media (max-width: 768px) {
+
+    /* Ajustar el contenedor principal */
+    main {
+        flex-direction: column; /* pone los elementos verticalmente */
+        align-items: center;
+    }
+
+    /* ajusta la barra lateral */
+    .sidebar {
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
+        padding: 10px;
+    }
+
+
+    /* Ajusta la sección de video */
+    .video-section {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .video {
+        width: 90%; 
+        max-width: 500px; 
+        height: auto; 
+        border-radius: 5px; 
+    }
+
+     /* Ajusta el carrusel de imágenes */
+     section {
+        display: flex;
+        flex-wrap: nowrap; /* Evita que las imágenes se apilen */
+        overflow-x: auto; /* hace el desplazamiento horizontal */
+        width: 100%; 
+        height: auto;
+        margin-left: 0; 
+        gap: 10px; /* Espacio entre imágenes */
+    }
+
+    section img {
+        width: 70%; 
+        flex-grow: 0; /* Evita que las imágenes crezcan más */
+        object-fit: contain; /* hace que  las imágenes se mantengan proporcionadas */
+        margin: 0 auto; 
+        opacity: 1; 
+        transition: 0.3s ease; 
+    }
+
+    section img:hover {
+        cursor: pointer;
+        transform: scale(1.05); /* Pequeño zoom al pasar el ratón */
+        filter: none; /* Elimina el contraste adicional */
+    }
+   
+}
+

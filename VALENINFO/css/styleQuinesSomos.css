@@ -1,0 +1,48 @@
+
+#imgLogo img{
+
+    width: 30%;
+    height: 10%;
+}
+
+#titulo{
+    color: rgb(152, 152, 255);
+    font-family: cursive;
+
+}
+nav {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Título ¿Quienes somos? */
+
+nav h1 {
+    color: rgb(152, 152, 255);
+    font-family: 'Cursive', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Texto descriptivo */
+nav p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Imagen del logo */
+#imgLogo img {
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+    border: 3px solid #98a9ff;
+}
