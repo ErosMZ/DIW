@@ -26,7 +26,6 @@ h1 {
 .tarjeta-curso {
     background: #fff;
     border: 1px solid aqua; 
-   
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -68,4 +67,30 @@ h1 {
 /*Cambio de color al pasar el raton por encima*/
 .boton:hover {
     background-color: #005bb5;
+}
+
+/* Media query para pantallas móviles (máximo 768px) */
+@media (max-width: 768px) {
+
+    .contenedor-cursos {
+        grid-template-columns: 1fr; /* lo pone todo en una sola columna */
+        gap: 1rem; /* hace el espacio entre los elementos */
+    }
+
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    .tarjeta-curso h2 {
+        font-size: 1.5rem; 
+    }
+
+    .tarjeta-curso p {
+        font-size: 0.9rem;
+    }
+
+    .boton {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem; 
+    }
 }

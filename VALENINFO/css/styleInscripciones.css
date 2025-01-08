@@ -112,3 +112,32 @@
     background-size: 8px 10px;
 }
 
+@media (max-width: 768px) {
+    #contenedorQuedada {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #imagenQuedada1 img {
+        max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho */
+        height: auto; /* Ajusta la altura proporcionalmente */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    #formulario {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #formulario h2 {
+        font-size: 1.2em; /* Reduce el tamaño de la fuente en dispositivos pequeños */
+    }
+
+    .form-control input,
+    .form-control select,
+    .form-control button {
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente */
+    }
+}

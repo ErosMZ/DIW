@@ -16,6 +16,20 @@ main {
     margin-left: 5%;
 }
 
+.video-link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.video-link:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
 
 
 /* Estilo del video */
@@ -216,5 +230,12 @@ section img:hover {
         filter: none; /* Elimina el contraste adicional */
     }
    
+}
+
+.textoLinkAlvideo{
+    color: black;
+    background-color: #005bb5;
+    height: 100px;
+    width: 100px;
 }
 
