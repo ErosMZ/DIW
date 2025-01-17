@@ -221,7 +221,7 @@ article:nth-of-type(3) img {
 /* Ajustar la posición de cada chincheta para los distintos artículos */
 article:nth-of-type(1) .chincheta {
     margin-top: -103px;
-    margin-left: 254px;
+    margin-left: 160px;
     animation: mueveChincheta1 1s ease-in-out forwards;
 }
 
@@ -321,33 +321,3 @@ header img{
 }
 
 
-@media (max-width: 475px) {
-    nav ul {
-        display: none; /* Ocultar el menú por defecto */
-    }
-
-    nav a.hamburguesa {
-        display: block; 
-        position: absolute; 
-        top: 10px; 
-        right: 10px; 
-        font-size: 30px; 
-        color: #000; 
-        cursor: pointer; 
-    }
-
-    nav ul.activo {
-        display: block; 
-        position: absolute; 
-        top: 50px; 
-        left: 0; 
-        width: 100%; 
-        background-color: #f8ad4b; 
-    }
-
-    nav ul li {
-        text-align: center; 
-        padding: 10px 0; 
-        border-bottom: 1px solid #ddd; 
-    }
-}
