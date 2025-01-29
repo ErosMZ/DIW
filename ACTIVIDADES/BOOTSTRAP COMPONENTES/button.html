@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        
+        .bordes{
+            border: 1px solid black;
+        }
+    
+        .morado{
+            background-color: rgb(177, 101, 243);
+            border: 2px  rgb(255, 255, 255) solid;
+        }
+    
+        .verde{
+            background-color: rgb(0, 214, 0);
+            border: 1px rgb(255, 255, 255) solid;
+        }
+    
+        .rojo{
+            background-color: red;
+            border: 1px rgb(255, 255, 255) solid;
+        }
+    
+       
+        
+
+        .gris{
+            background-color: rgb(200, 200, 200);
+            border: 1px rgb(255, 255, 255) solid;
+           
+        }
+
+        .azul{
+            background-color: rgb(63, 233, 255);
+            border: 1px rgb(255, 255, 255) solid;
+        }
+    
+        .naranja{
+            background-color: rgba(240, 125, 2, 0.63);
+            border: 1px rgb(255, 255, 255) solid;
+           
+        }
+        
+        .blanco{
+            background-color: white;
+            border: 1px rgb(255, 255, 255) solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+
+        <div class="row">
+            <div class="col-12 naranja">
+                BOTONES
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6 gris">
+                <p><b> Predefinidos</b></p>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-info">Info</button>
+            </div>
+            <div class="col-md-6 gris">
+                <p><b> Con link, input, submit, reset</b></p>
+                <a class="btn btn-primary" href="#" role="button">Link</a>
+                <button class="btn btn-success" type="submit">Button</button>
+                <input class="btn btn-secondary" type="button" value="Input">
+                <input class="btn btn-info" type="submit" value="Submit">
+                <input class="btn btn-danger" type="reset" value="Reset">
+            </div>
+            <div class="col-md-6 blanco">
+                <p><b> Con bordes y fondo gris</b></p>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+            </div>
+
+            <div class="col-md-6 gris">
+                <p><b> Grandes, normales y pequeños</b></p>
+                <button type="button" class="btn btn-primary btn-lg">Grande</button>
+                <button type="button" class="btn btn-primary btn-sm">Normal</button>
+                <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Pequeño
+                </button>
+            </div>
+
+        </div>
+ 
+    </div>
+</body>
+</html>
