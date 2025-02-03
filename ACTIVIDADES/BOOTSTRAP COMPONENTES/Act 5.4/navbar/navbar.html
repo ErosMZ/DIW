@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Página principal</title>
+    <style>
+        .footerColor {
+            background-color: antiquewhite;
+        }
+        .colorContenedorForm {
+            background-color: rgb(214, 230, 230);
+            border: 1px rgb(174, 174, 253) solid;
+            border-radius: 5px;
+            margin-top: 3%;
+            padding: 20px;
+        }
+        .contenedorMain{
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg footerColor w-100">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="navbar.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="forms.html">Pedidos</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Mujer</a></li>
+                                  <li><a class="dropdown-item" href="#">Hombre</a></li>
+                                </ul>
+                              </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+            <div class="row contenedorMain">
+                <div class="col">HOLA SOY EROS</div>
+            </div>
+
+        <br>
+        <div class="row">
+            <footer class="text-center text-lg-start bg-body-tertiary text-muted w-100">
+                <section class="footerColor">
+                    <div class="container text-center text-md-start mt-5">
+                        <div class="row mt-3">
+                            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">Ejemplo:</h6>
+                                <p>Esto es una página de ejemplo hecha por Eros que trata de un formulario con un footer y una cabecera.</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                                <p><i class="fas fa-home me-3"></i> Valencia, España</p>
+                                <p><i class="fas fa-envelope me-3"></i> eros@example.com</p>
+                                <p><i class="fas fa-phone me-3"></i> +34 123456789</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="text-center p-4 bg-light">
+                    © 2025 Copyright: <a class="text-reset fw-bold" href="#">erosmunoz.com</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
