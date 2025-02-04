@@ -1,0 +1,42 @@
+.imagenLogo{
+    border-radius: 50%;
+}
+
+nav {
+    border-bottom: 1px solid black;
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.parte1{
+    
+    background-color: blueviolet;
+}
+.parte2{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: aqua;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 10px;
+}
+.parte3{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: brown;
+}
+
+aside{
+    background-color: yellow;
+    grid-row: 1 / 4;
+}
+
+.apartado{
+    text-align: center;
+    border: 1px black solid;
+}
