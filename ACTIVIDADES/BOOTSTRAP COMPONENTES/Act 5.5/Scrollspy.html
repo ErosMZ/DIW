@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Popover Eros</title>
+    <style>
+        .color {
+            background-color: antiquewhite;
+        }
+
+        .scrollspy-example {
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav justify-content-center color">
+        <li class="nav-item">
+            <a class="nav-link" href="pagination.html">Pagination</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="popover.html">Pagination</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="progress.html">Progress</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Scrollspy.html">Scrollspy</a>
+        </li>
+    </ul>
+
+    <br><br>
+    
+    <div class="row">
+        <div class="col-4">
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Noticia 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Noticia 2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Noticia 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Noticia 4</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">España construye un laboratorio puntero en el fin del mundo</h4>
+                <p>
+                    Tras beberse una botella de cava, el día de Navidad de 1986, cuatro científicos españoles zarparon de una base polaca en busca de un lugar en el que establecer el primer campamento de España en la Antártida. La bióloga Josefina Castellví era una de ellos. En sus memorias relató que desembarcaron en una playa de la isla Livingston y montaron una tienda de campaña. En la entrada colocaron un papel escrito a mano cutremente que decía: “Primer campamento del CSIC [Consejo Superior de Investigaciones Científicas] en la Antártida”. Tres años después, el Ejército de Tierra inauguró un modesto refugio, bautizado Gabriel de Castilla, en la cercana isla Decepción. Aquellas tiendas de campaña ya son historia. España construye ahora uno de los laboratorios más modernos de la Antártida.
+                </p>
+                <h4 id="list-item-2">La economía española sorprende al mundo: de oveja negra a motor europeo</h4>
+                <p>
+                    Nada es eterno, la realidad es dinámica y el peor de la clase, si se aplica, también puede sacar buenas notas y convertirse en ejemplo para los demás. Todas estas máximas se acomodan a la historia reciente de la economía española, que en los últimos 15 años ha estado varias veces al borde del precipicio y ha acabado resurgiendo de sus cenizas. 
+                </p>
+                <h4 id="list-item-3">España despliega 3.200 militares, 300 vehículos, cinco cazas y tres fragatas en Europa del Este</h4>
+                <p>
+                    La OTAN ha dado el pistoletazo de salida al mayor ejercicio que prevé llevar a cabo este año: el Steadfast Dart 25 (STDT 25), en el que participarán cerca de 10.000 militares. El mismo se prolongará hasta el 21 de febrero en Bulgaria, Rumanía y Grecia y servirá para evaluar por primera vez las capacidades de la Fuerza de Reacción Rápida (ARF) de la Alianza Atlántica, tras su instauración en julio de 2024.
+                </p>
+                <h4 id="list-item-4">MOMAD impulsa la moda española en el mercado global</h4>
+                <p>
+                    El sector de la moda aumentó su contribución al PIB hasta el 2,9%, siendo el máximo histórico del sector, tal y como se puede extraer del Informe Económico de la Moda en España, elaborado por el Observatorio del Textil y la Moda.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
+        dataSpyList.forEach(dataSpyEl => {
+            bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
+        })
+
+        const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+        firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+            // do something...
+        })
+    </script>
+
+</body>
+</html>
