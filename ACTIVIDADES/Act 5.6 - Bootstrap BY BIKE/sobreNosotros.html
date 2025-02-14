@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- FontAwesome -->
+    <link rel="stylesheet" href="quienesSomos.css">
+    <title>Sobre nosotros</title>
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="./imgs - web bicicletas/logo.png" alt="Bootstrap" width="80" height="60">
+        </a>
+        <a class="navbar-brand" href="index.html">By Bike</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"> 
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disable" aria-current="page" href="#">Bicicletas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disable" aria-current="page" href="#">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disable" aria-current="page" href="#">Componentes</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Sillines</a></li>
+                      <li><a class="dropdown-item" href="#">Cascos</a></li>
+                      <li><a class="dropdown-item" href="#">Tijas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Sobre Nosotros</h2>
+            <p class="text-center">Conoce más sobre nuestra tienda de bicicletas.</p>
+
+            
+            <button class="btn btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuienesSomos" aria-expanded="false" aria-controls="collapseQuienesSomos">
+                <i class="fas fa-users"></i> Quiénes Somos
+            </button>
+            <div class="collapse" id="collapseQuienesSomos">
+                <div class="card card-body mt-3">
+                    <p>Somos una tienda apasionada por las bicicletas y el ciclismo. Nos especializamos en ofrecer productos de calidad para todos los ciclistas, desde principiantes hasta expertos.</p>
+                    <p>Contamos con una amplia variedad de bicicletas y accesorios para que puedas disfrutar de la mejor experiencia sobre dos ruedas.</p>
+                </div>
+            </div>
+            <br>
+            
+            <button class="btn btn-custom mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReferencias" aria-expanded="false" aria-controls="collapseReferencias">
+                <i class="fas fa-clipboard-list"></i> Referencias
+            </button>
+            <div class="collapse" id="collapseReferencias">
+                <div class="card card-body mt-3">
+                    <p>Algunos de nuestros clientes satisfechos incluyen a clubes de ciclismo locales, ciclistas profesionales y aficionados al deporte en toda la región.</p>
+                    <p>Nos enorgullece ofrecer productos de marcas reconocidas y brindar un excelente servicio al cliente.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- Sección de Testimonios -->
+        <div class="testimonials">
+            <div class="container">
+                <h3 class="text-center mb-4">Lo que dicen nuestros clientes</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-item">
+                            <p>"¡Una experiencia increíble! El servicio fue excepcional y la calidad de las bicicletas es inigualable."</p>
+                            <h5>- Ana Martínez</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-item">
+                            <p>"Mi bicicleta llegó en perfectas condiciones. El envío fue rápido y el equipo siempre estuvo disponible para responder mis preguntas."</p>
+                            <h5>- Juan Pérez</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-item">
+                            <p>"Gran tienda, los productos son de alta calidad y los precios son justos. ¡Muy recomendado!"</p>
+                            <h5>- Marta Gómez</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Columna de contacto -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: eros@example.com</li>
+                            <li>Teléfono: +34 600 000 000</li>
+                            <li>Dirección: Catarroja, 123</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <!-- Espacio vacío para más contenido -->
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Sobre Nosotros</h5>
+                        <p>Somos una tienda apasionada por las bicicletas y el ciclismo. Ofrecemos los mejores productos para que disfrutes del deporte con calidad y seguridad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>© 2025 Eros - Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

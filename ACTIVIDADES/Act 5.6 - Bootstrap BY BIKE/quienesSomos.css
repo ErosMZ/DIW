@@ -1,0 +1,45 @@
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.card-body {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.card-body p {
+    font-size: 1.1rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    background-color: #f1f3f5;
+    padding: 40px 0;
+}
+
+.testimonial-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+.testimonial-item h5 {
+    margin-top: 10px;
+}
