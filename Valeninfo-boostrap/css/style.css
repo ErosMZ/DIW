@@ -1,0 +1,46 @@
+.imagenLogo{
+    border-radius: 50%;
+}
+
+nav {
+    border-bottom: 1px solid black;
+    
+}
+
+.hero {
+    position: relative;
+    background: url('../img/concepto-diseno-web-dibujos_1134-77.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
