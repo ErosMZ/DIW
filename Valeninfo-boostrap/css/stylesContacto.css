@@ -1,0 +1,67 @@
+/* Estilos para cambiar el color de los campos */
+input:valid, textarea:valid {
+    border-color: #28a745; /* Verde cuando el valor es válido */
+}
+
+input:invalid, textarea:invalid {
+    border-color: #dc3545; /* Rojo cuando el valor es inválido */
+}
+
+/* También puedes cambiar el fondo si lo prefieres */
+input:valid, textarea:valid {
+    background-color: #d4edda; /* Fondo verde claro */
+}
+
+input:invalid, textarea:invalid {
+    background-color: #f8d7da; /* Fondo rojo claro */
+}
+
+/* Estilos para la alerta */
+.alert {
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Asegurarse de que el contenido ocupe toda la altura disponible */
+.content {
+    min-height: 80vh;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para la línea de separación */
+.separador {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 120%; /* Hace que la línea sea más ancha que el formulario */
+    margin-left: -10%; /* Ajusta la alineación para que se expanda más allá de los márgenes */
+}
+
+/* Estilo para las secciones adicionales */
+.contact-info, .contact-map {
+    margin-top: 30px;
+}
+
+/* Limitar el ancho del mapa */
+.contact-map iframe {
+max-width: 80%; /* Puedes ajustar el valor según lo que necesites */
+margin: 0 auto;
+display: block;
+}
+
+/* Centramos los textos en las secciones de contacto y mapa */
+.contact-info, .contact-map {
+text-align: center;
+}
