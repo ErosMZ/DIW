@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Act 5.6 BOOTSTRAP WEB BY BIKE</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./imgs - web bicicletas/logo.png" alt="Bootstrap" width="80" height="60">
+            </a>
+            <a class="navbar-brand" href="index.html">By Bike</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> 
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disable" aria-current="page" href="#">Bicicletas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disable" aria-current="page" href="#">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disable" aria-current="page" href="#">Componentes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Sillines</a></li>
+                          <li><a class="dropdown-item" href="#">Cascos</a></li>
+                          <li><a class="dropdown-item" href="#">Tijas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sobreNosotros.html">Sobre Nosotros</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <main>
+        <div class="row">
+            <!-- Barra lateral -->
+            <div class="col-3 colBarra">
+                <h5>Productos Populares</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Bicicleta de montaña</a></li>
+                    <li><a href="#">Casco de seguridad</a></li>
+                    <li><a href="#">Guantes de ciclismo</a></li>
+                    <li><a href="#">Soporte para celular</a></li>
+                    <li><a href="#">Cesta para bicicleta</a></li>
+                </ul>
+                <h5>Ofertas Especiales</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Descuento en bicicletas de carretera</a></li>
+                    <li><a href="#">Envío gratis en accesorios</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna principal -->
+            <div class="col col-full-height">
+                <div class="row">
+                    <!-- Carrusel de imágenes -->
+                    <div class="offset-3 col-6">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="./imgs - web bicicletas/componentes.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./imgs - web bicicletas/orbea.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./imgs - web bicicletas/accesorios.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5>Productos Destacados</h5>
+                    <div class="row">
+                        <!-- Tarjetas de productos -->
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imgs - web bicicletas/bici1.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bicicleta de Montaña</h5>
+                                    <p class="card-text">Ideal para terrenos difíciles y aventuras al aire libre.</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imgs - web bicicletas/casco.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Casco de Seguridad</h5>
+                                    <p class="card-text">Protección esencial para tu seguridad mientras pedaleas.</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./imgs - web bicicletas/guantes.jpg" class="card-img-top" alt="Guantes de ciclismo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guantes de Ciclismo</h5>
+                                    <p class="card-text">Cómodos y resistentes, perfectos para largas rutas.</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <!-- Formulario de contacto -->
+    <section class="contact-section bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2>Contáctanos</h2>
+                    <p>Si tienes alguna pregunta o necesitas más información, por favor, rellena el formulario a continuación.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna de contacto -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: eros@example.com</li>
+                        <li>Teléfono: +34 600 000 000</li>
+                        <li>Dirección: Catarroja, 123</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <!-- Espacio vacío para más contenido -->
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Somos una tienda apasionada por las bicicletas y el ciclismo. Ofrecemos los mejores productos para que disfrutes del deporte con calidad y seguridad.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p>© 2025 Eros - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
