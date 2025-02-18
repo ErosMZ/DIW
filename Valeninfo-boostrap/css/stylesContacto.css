@@ -42,7 +42,7 @@ footer {
 .separador {
     border: none;
     height: 2px;
-    background-color: #ddd;
+    background-color: rgb(133, 133, 133);
     margin-top: 30px;
     margin-bottom: 30px;
     width: 120%; /* Hace que la línea sea más ancha que el formulario */
@@ -56,9 +56,9 @@ footer {
 
 /* Limitar el ancho del mapa */
 .contact-map iframe {
-max-width: 80%; /* Puedes ajustar el valor según lo que necesites */
-margin: 0 auto;
-display: block;
+    max-width: 80%; /* Puedes ajustar el valor según lo que necesites */
+    margin: 0 auto;
+    display: block;
 }
 
 /* Centramos los textos en las secciones de contacto y mapa */
