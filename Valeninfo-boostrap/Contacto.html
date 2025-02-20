@@ -1,169 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/stylesContacto.css">
-    <title>Contacto</title>
-    <style>
-        
-</style>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylesContacto.css">
+  <title>Contacto</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./img/foto-logo.jpg" alt="Logo" width="90" height="80" class="d-inline-block align-text-top imagenLogo">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/foto-logo.jpg" alt="Logo" width="90" height="80" class="d-inline-block align-text-top imagenLogo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="quienesSomos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="quienesSomos.html">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="Contacto.html">Contacto</a></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="Contacto.html">Contacto</a></li>
+    </ol>
+  </nav>
 
-        </ol>
-    </nav>
-    <!-- Contacto Section -->
-    <div class="container my-5 content">
-        <h2 class="text-center mb-4">Contacto</h2>
+  <!-- Contenedor principal -->
+  <div class="container my-5 content">
+    <div class="row">
+      <!-- Columna izquierda: Formulario -->
+      <div class="col-md-6 border-end pe-4">
+        <h2 class="text-center mb-4">Formulario de Contacto</h2>
         
         <!-- Formulario de Contacto -->
         <form id="contactForm">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-            </div>
-            <!-- Nuevo campo para seleccionar tema -->
-            <div class="mb-3">
-                <label for="tema" class="form-label">Tema</label>
-                <select class="form-select" id="tema" required>
-                    <option value="" disabled selected>Selecciona un tema</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="queja">Queja</option>
-                </select>
-            </div>
-            <!-- Nuevo campo para adjuntar archivos (opcional) -->
-            <div class="mb-3">
-                <label for="archivo" class="form-label">Adjuntar Archivo (opcional)</label>
-                <input type="file" class="form-control" id="archivo">
-            </div>
-            <!-- Campo para dirección (obligatorio) -->
-            <div class="mb-3">
-                <label for="direccion" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="direccion" required>
-            </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Enviar
-            </button>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+          </div>
+          <!-- Nuevo campo para seleccionar tema -->
+          <div class="mb-3">
+            <label for="tema" class="form-label">Tema</label>
+            <select class="form-select" id="tema" required>
+              <option value="" disabled selected>Selecciona un tema</option>
+              <option value="consulta">Consulta</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="queja">Queja</option>
+            </select>
+          </div>
+          <!-- Nuevo campo para adjuntar archivos (opcional) -->
+          <div class="mb-3">
+            <label for="archivo" class="form-label">Adjuntar Archivo (opcional)</label>
+            <input type="file" class="form-control" id="archivo">
+          </div>
+          <!-- Campo para dirección (obligatorio) -->
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" required>
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Enviar
+          </button>
         </form>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+          <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmación de Envío</h1>
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel text-black"><p> Confirmación de Envío</p></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+              </div>
+              <div class="modal-body text-black">
                 ¿Está seguro de que desea enviar el formulario?
-                </div>
-                <div class="modal-footer">
+              </div>
+              <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="confirmarEnvio">Aceptar</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Rechazar</button>
-                </div>
+              </div>
             </div>
-            </div>
-        </div>        
+          </div>
+        </div>
 
-        <!-- Alerta de éxito -->
+        <!-- Alerta de éxito (solo una) -->
         <div id="alertaEnviada" class="alert alert-success mt-4 d-none" role="alert">
-            ¡Su formulario ha sido enviado con éxito!
-            <button type="button" class="btn-close" aria-label="Close" id="cerrarAlerta"></button>
+          ¡Su formulario ha sido enviado con éxito!
+          <button type="button" class="btn-close" aria-label="Close" id="cerrarAlerta"></button>
         </div>
+      </div>
 
+      <!-- Columna derecha: Información + Mapa -->
+      <div class="col-md-6 ps-4">
+        <h2 class="text-center mb-4">Información de Contacto</h2>
+        <ul class="list-unstyled mb-4">
+          <li><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</li>
+          <li><strong>Teléfono:</strong> +34 123 456 789</li>
+          <li><strong>Email:</strong> contacto@eventosvalencia.com</li>
+        </ul>
+
+      
+
+        <h3 class="mb-3">Ubicación</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14598.644053524105!2d-0.3601530908153165!3d39.46990782632936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60e1f1a6ac4e93%3A0x4b0f9531fced3326!2sValencia!5e0!3m2!1ses!2ses!4v1675353344135!5m2!1ses!2ses" 
+                  width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Script para el Modal -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- JavaScript para mostrar y cerrar la alerta -->
-    <script>
-        document.getElementById('confirmarEnvio').addEventListener('click', function() {
-            // Mostrar la alerta de éxito
-            document.getElementById('alertaEnviada').classList.remove('d-none');
-            
-            // Opcional: Restablecer los campos del formulario
-            document.getElementById('contactForm').reset();
-        });
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Eventos Valencia - Todos los derechos reservados</p>
+  </footer>
 
-        // Cerrar la alerta cuando se hace clic en la "X"
-        document.getElementById('cerrarAlerta').addEventListener('click', function() {
-            document.getElementById('alertaEnviada').classList.add('d-none');
-        });
-    </script>
-     <!-- Línea de separación más larga que el formulario -->
-     <hr class="separador">
+  <!-- Script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-     <!-- Información de contacto -->
-     <div class="contact-info">
-         <h3>Información de Contacto</h3>
-         <ul class="list-unstyled">
-             <li><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</li>
-             <li><strong>Teléfono:</strong> +34 123 456 789</li>
-             <li><strong>Email:</strong> contacto@eventosvalencia.com</li>
-         </ul>
-     </div>
+  <!-- Script para mostrar y cerrar la alerta -->
+  <script>
+    document.getElementById('confirmarEnvio').addEventListener('click', function() {
+      // Mostrar la alerta de éxito
+      document.getElementById('alertaEnviada').classList.remove('d-none');
+      // Restablecer los campos del formulario
+      document.getElementById('contactForm').reset();
+    });
 
-     <!-- Mapa de contacto -->
-     <div class="contact-map">
-            <h3>Ubicación</h3>
-            <!-- Aquí puedes agregar un mapa interactivo (por ejemplo, usando Google Maps) -->
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14598.644053524105!2d-0.3601530908153165!3d39.46990782632936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60e1f1a6ac4e93%3A0x4b0f9531fced3326!2sValencia!5e0!3m2!1ses!2ses!4v1675353344135!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-
-        <!-- Alerta de éxito -->
-        <div id="alertaEnviada" class="alert alert-success mt-4 d-none" role="alert">
-            ¡Su formulario ha sido enviado con éxito!
-            <button type="button" class="btn-close" aria-label="Close" id="cerrarAlerta"></button>
-        </div>
-    </div>
-    <br>
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Eventos Valencia - Todos los derechos reservados</p>
-    </footer>
+    // Cerrar la alerta cuando se hace clic en la "X"
+    document.getElementById('cerrarAlerta').addEventListener('click', function() {
+      document.getElementById('alertaEnviada').classList.add('d-none');
+    });
+  </script>
 </body>
 </html>

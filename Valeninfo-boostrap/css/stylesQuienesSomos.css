@@ -6,8 +6,12 @@
 }
 
 .carousel-item img {
-    height: 450px; /* Ajusta la altura según necesites */
+    height: 600px; /* Ajusta la altura según necesites */
     object-fit: cover; /* Recorta la imagen sin deformarla */
    
+}
+
+.modal-body p{
+    color: black;
 }
 

@@ -12,29 +12,40 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./img/foto-logo.jpg" alt="Logo" width="90" height="80" class="d-inline-block align-text-top imagenLogo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="quienesSomos.html">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
-                    </li>
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/foto-logo.jpg" alt="Logo" width="90" height="80" class="d-inline-block align-text-top imagenLogo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="quienesSomos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
                 </ul>
-            </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+      
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -66,74 +77,88 @@
     </div>
 </div>
     <!-- Video -->
-    <div class="video-container">
-        <video controls>
-            <source src="img/videoPresentacion.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
+    <div class="containerStep">
+        <div class="step">
+            <div class="step-number">📢</div>
+            <h3> Nuestra comunidad de apasionados por la informática</h3>
+            
+            <p>Si te interesa el desarrollo web, la ciberseguridad, las redes o cualquier otra rama, únete a nuestra asociación.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">📝</div>
+            <h3>Inscribete a actividades y eventos</h3>
+            <p>Preparamos conferencias, cursos y reuniones para aprender, compartir conocimientos y hacer networking</p>
+        </div>
+        <div class="step">
+            <div class="step-number">🎤</div>
+            <h3>Participa en charlas, cursos y reuniones</h3>
+            <p>Organizamos encuentros presenciales y online donde expertos y entusiastas comparten experiencias y conocimientos.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">🌍</div>
+            <h3>Forma parte de una comunidad en constante evolución.</h3>
+            <p>Accede a más recursos, colabora en proyectos y sigue aprendiendo con nosotros.</p>
+        </div>
     </div>
-    
-    <!-- Sección de Eventos Destacados -->
-    <div class="container my-5">
+    <!-- Sección Redes Sociales y Contador -->
+<div class="container-fluid bg-white text-dark py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Nuestra Comunidad</h2>
+        <div class="d-flex justify-content-center gap-5">
+            <!-- Instagram -->
+            <div class="social-container">
+                <a href="https://www.instagram.com" target="_blank" class="social-circle bg-dark">
+                    <i class="fab fa-instagram text-white"></i>
+                </a>
+                <p class="social-counter">+1000</p>
+            </div>
+            <!-- Twitter -->
+            <div class="social-container">
+                <a href="https://www.twitter.com" target="_blank" class="social-circle bg-dark">
+                    <i class="fab fa-twitter text-white"></i>
+                </a>
+                <p class="social-counter">+500</p>
+            </div>
+            <!-- YouTube -->
+            <div class="social-container">
+                <a href="https://www.youtube.com" target="_blank" class="social-circle bg-dark">
+                    <i class="fab fa-youtube text-white"></i>
+                </a>
+                <p class="social-counter">+300</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container event-section">
         <h2 class="text-center mb-4">Eventos Destacados</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.438578270209!2d-0.3908562846611489!3d39.42418397949414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f52ea7e3f33%3A0x3a732e43b49c8fa5!2sSedav%C3%AD%2C%20Valencia!5e0!3m2!1ses!2ses!4v1708000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="card-body">
-                        <h5 class="card-title">Evento en Sedaví</h5>
-                        <p class="card-text">Ven a disfrutar de este evento especial en Sedaví.</p>
-                        <p class="text-primary fw-bold">Precio: 2€</p>
+                <div class="event-card">
+                    <img src="img/reunionesAlAireLibre.jpg" alt="Evento" class="event-img">
+                    <div class="event-info">
+                        <h5 class="event-title">Al aire libre</h5>
+                        <p class="event-description">Únete a nuestra reunión en Sedaví para discutir nuevas tecnologías.</p>
+                        <p class="event-price">Precio: 2€</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.9092312329856!2d-0.4158665846615779!3d39.41380197949452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd605c9b4b1f0d67%3A0xa5b99d3a6d3a5f2b!2sCatarroja%2C%20Valencia!5e0!3m2!1ses!2ses!4v1708000000001" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="card-body">
-                        <h5 class="card-title">Evento en Catarroja</h5>
-                        <p class="card-text">Ven a disfrutar de este evento especial en Catarroja.</p>
-                        <p class="text-primary fw-bold">Precio: 2€</p>
+                <div class="event-card">
+                    <img src="img/salaReuniones.jpg" alt="Evento" class="event-img">
+                    <div class="event-info">
+                        <h5 class="event-title">Sala de reuniones</h5>
+                        <p class="event-description">Conferencia sobre ciberseguridad y redes.</p>
+                        <p class="event-price">Precio: 2€</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.1281498978985!2d-0.3760572846610576!3d39.439927479494135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f51b9121f33%3A0x3a5c8e9b7b3a7a47!2sAlfafar%2C%20Valencia!5e0!3m2!1ses!2ses!4v1708000000002" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="card-body">
-                        <h5 class="card-title">Evento en Alfafar</h5>
-                        <p class="card-text">Ven a disfrutar de este evento especial en Alfafar.</p>
-                        <p class="text-primary fw-bold">Precio: 2€</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.2287462091363!2d-0.4323145846620018!3d39.39951277949461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd605d6c3a7e7f2f%3A0x3a8fbd7b3b2a7f3d!2sPaiporta%2C%20Valencia!5e0!3m2!1ses!2ses!4v1708000000003" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="card-body">
-                        <h5 class="card-title">Evento en Paiporta</h5>
-                        <p class="card-text">Ven a disfrutar de este evento especial en Paiporta.</p>
-                        <p class="text-primary fw-bold">Precio: 2€</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.9097490271786!2d-0.3842663846608751!3d39.444901979493876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f50c4b3d867%3A0x3a7e4e9b7b3a7c47!2sBenet%C3%BAsser%2C%20Valencia!5e0!3m2!1ses!2ses!4v1708000000004" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="card-body">
-                        <h5 class="card-title">Evento en Benetússer</h5>
-                        <p class="card-text">Ven a disfrutar de este evento especial en Benetússer.</p>
-                        <p class="text-primary fw-bold">Precio: 2€</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.566537104136!2d-0.4423665846621117!3d39.39278747949462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd605d6b7b1b7f27%3A0x3a8f4e9b7b3a7d45!2sAlbal%2C%20Valencia!5e0!3m2!1ses!2ses!4v1708000000005" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="card-body">
-                        <h5 class="card-title">Evento en Albal</h5>
-                        <p class="card-text">Ven a disfrutar de este evento especial en Albal.</p>
-                        <p class="text-primary fw-bold">Precio: 2€</p>
+                <div class="event-card">
+                    <img src="img/reunionesOnline.jpg" alt="Evento" class="event-img">
+                    <div class="event-info">
+                        <h5 class="event-title">Online</h5>
+                        <p class="event-description">Taller de desarrollo web y aplicaciones móviles.</p>
+                        <p class="event-price">Precio: 2€</p>
                     </div>
                 </div>
             </div>
