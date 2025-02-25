@@ -58,24 +58,31 @@
             <p>Quedadas de Informáticos</p>
         </div>
     </div>
-     <!-- Nuevo Apartado -->
-<div class="container my-5">
-    <h2 class="text-center mb-4">Nuestros objetivos</h2>
-    <div class="row align-items-center">
+   
+     <!--Nuestros objetivos -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Nuestros objetivos</h2>
+        <div class="row align-items-center">
         <div class="col-md-6">
-            <img src="./img/foto-logo.jpg" alt="Comunidad Informática" class="img-fluid rounded shadow">
+            <img id="fotoLogoObjetivos" src="./img/foto-logo.jpg" alt="Comunidad Informática" class="img-fluid rounded shadow">
         </div>
         <div class="col-md-6">
-            <p class="lead">Nuestros objetivo es crear una gran comidad de personas con ganas de aprender del entorno de la informática y sobre todo hacer amistades en el entorno.</p>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">🔹 Charlas y conferencias</li>
-                <li class="list-group-item">🔹 Talleres prácticos</li>
-                <li class="list-group-item">🔹 Networking con profesionales</li>
+            <div class="objetivos-text">
+            <p class="lead colorNegro">
+                Nuestro objetivo es crear una gran comunidad de personas con ganas de aprender del entorno de la informática y, sobre todo, hacer amistades.
+            </p>
+            <ul class="objetivos-list">
+                <li>Charlas y conferencias</li>
+                <li>Talleres prácticos</li>
+                <li>Networking con profesionales</li>
             </ul>
             <a href="registro.html" class="btn btn-primary mt-3">Únete Ahora</a>
+            </div>
+        </div>
         </div>
     </div>
-</div>
+  
+      
     <!-- Video -->
     <div class="containerStep">
         <div class="step">
@@ -101,43 +108,44 @@
         </div>
     </div>
     <!-- Sección Redes Sociales y Contador -->
-<div class="container-fluid bg-white text-dark py-5">
-    <div class="container text-center">
-        <h2 class="mb-4">Nuestra Comunidad</h2>
-        <div class="d-flex justify-content-center gap-5">
-            <!-- Instagram -->
-            <div class="social-container">
-                <a href="https://www.instagram.com" target="_blank" class="social-circle bg-dark">
-                    <i class="fab fa-instagram text-white"></i>
-                </a>
-                <p class="social-counter">+1000</p>
-            </div>
-            <!-- Twitter -->
-            <div class="social-container">
-                <a href="https://www.twitter.com" target="_blank" class="social-circle bg-dark">
-                    <i class="fab fa-twitter text-white"></i>
-                </a>
-                <p class="social-counter">+500</p>
-            </div>
-            <!-- YouTube -->
-            <div class="social-container">
-                <a href="https://www.youtube.com" target="_blank" class="social-circle bg-dark">
-                    <i class="fab fa-youtube text-white"></i>
-                </a>
-                <p class="social-counter">+300</p>
+    <div class="container-fluid bg-white text-dark py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Nuestra Comunidad</h2>
+            <div class="d-flex justify-content-center gap-5">
+                <!-- Instagram -->
+                <div class="social-container">
+                    <a href="https://www.instagram.com" target="_blank" class="social-circle bg-dark">
+                        <img src="./img/ig.avif" alt="Instagram" class="imagenLogo">
+                    </a>
+                    <p class="social-counter">+1000</p>
+                </div>
+                <!-- Twitter -->
+                <div class="social-container">
+                    <a href="https://www.twitter.com" target="_blank" class="social-circle bg-dark">
+                        <img src="./img/x.avif" alt="Twitter" class="imagenLogo">
+                    </a>
+                    <p class="social-counter">+500</p>
+                </div>
+                <!-- YouTube -->
+                <div class="social-container">
+                    <a href="https://www.youtube.com" target="_blank" class="social-circle bg-dark">
+                        <img src="./img/yt.png" alt="YouTube" class="imagenLogo">
+                    </a>
+                    <p class="social-counter">+300</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    
     <div class="container event-section">
-        <h2 class="text-center mb-4">Eventos Destacados</h2>
+        <h2 class="text-center mb-4">Eventos destacados</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="event-card">
                     <img src="img/reunionesAlAireLibre.jpg" alt="Evento" class="event-img">
                     <div class="event-info">
-                        <h5 class="event-title">Al aire libre</h5>
-                        <p class="event-description">Únete a nuestra reunión en Sedaví para discutir nuevas tecnologías.</p>
+                        <h5 class="event-title">Reuniones al Aire Libre</h5>
+                        <p class="event-description">Disfruta de un encuentro relajado en el parque para charlar sobre tecnología y compartir ideas.</p>
                         <p class="event-price">Precio: 2€</p>
                     </div>
                 </div>
@@ -146,8 +154,8 @@
                 <div class="event-card">
                     <img src="img/salaReuniones.jpg" alt="Evento" class="event-img">
                     <div class="event-info">
-                        <h5 class="event-title">Sala de reuniones</h5>
-                        <p class="event-description">Conferencia sobre ciberseguridad y redes.</p>
+                        <h5 class="event-title">Reuniones en Sala Cerrada</h5>
+                        <p class="event-description">Aprende con expertos en una sesión exclusiva sobre ciberseguridad y protección de datos.</p>
                         <p class="event-price">Precio: 2€</p>
                     </div>
                 </div>
@@ -156,15 +164,14 @@
                 <div class="event-card">
                     <img src="img/reunionesOnline.jpg" alt="Evento" class="event-img">
                     <div class="event-info">
-                        <h5 class="event-title">Online</h5>
-                        <p class="event-description">Taller de desarrollo web y aplicaciones móviles.</p>
+                        <h5 class="event-title">Reuniones en Línea Virtual</h5>
+                        <p class="event-description">Participa desde cualquier lugar en nuestro taller sobre desarrollo web y apps móviles.</p>
                         <p class="event-price">Precio: 2€</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">

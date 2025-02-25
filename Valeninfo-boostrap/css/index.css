@@ -29,9 +29,7 @@
 .hero p {
     font-size: 1.5rem;
 }
-img{
-    background-color: #ffffff;
-}
+
 
 .video-container {
     position: relative;
@@ -48,9 +46,6 @@ video {
     border-radius: 15px;
 
 }
-
-
-
 
 .card {
     background: #ecf5ff; /* Azul claro */
@@ -83,9 +78,8 @@ footer {
     margin: 20px;
 }
 .step {
-    border: 1px white solid;
 
-    background-color: #00589b;
+    background-color: #000000;
     color: white;
     padding: 20px;
     margin: 10px;
@@ -101,7 +95,7 @@ footer {
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #00a5ff;
+    background-color: #585858;
     color: white;
     width: 40px;
     height: 40px;
@@ -111,7 +105,23 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     font-weight: bold;
+    border: 1px solid white;
 }
+
+/* Aplica transición para un efecto suave */
+#fotoLogoObjetivos {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover: sobresalir y resaltar */
+  #fotoLogoObjetivos:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px #ec731e;
+    transform: scale(1.15);
+  }
+  
+  
+
 .buttons {
     margin-top: 20px;
 }
@@ -133,8 +143,9 @@ footer {
 
 .event-section {
     padding: 50px 0;
-}
+  }
 .event-card {
+
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -146,30 +157,42 @@ footer {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 .event-img {
+    
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 .event-info {
-    background: linear-gradient(135deg, #007bff, #00c8ff);
+    background: #000; /* Fondo negro sin degradado */
     color: white;
     padding: 20px;
     border-radius: 0 0 15px 15px;
     text-align: center;
-}
+  }
 .event-title {
     font-size: 1.5rem;
     font-weight: bold;
+    min-height: 50px; /* Asegura que todos los títulos tengan la misma altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .event-description {
     font-size: 1rem;
     margin-bottom: 10px;
+    min-height: 60px; /* Ajusta para que todas las descripciones sean del mismo tamaño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .event-price {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 
 .social-container {
     text-align: center;
@@ -198,3 +221,62 @@ footer {
     font-weight: bold;
     color: black;
 }
+
+.imagenLogo {
+    width: 50px; /* Ajusta según el tamaño deseado */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* Evita deformaciones */
+}
+
+#fotoLogoObjetivos{
+   
+    background-color: white; /* Mantiene el mismo fondo que el contenedor */
+    
+    height: 300px;
+    margin-left: 100px;
+}
+
+.titulo{
+    
+    font-family: Lucida;
+}
+
+
+
+
+  
+  /* Caja personalizada para el texto */
+  .objetivos-text {
+    background: linear-gradient(135deg, #fdfdfd, #f5f5f5);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Lista personalizada (sin usar clases de Bootstrap) */
+  .objetivos-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .objetivos-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .objetivos-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ec731e;
+  }
+
+  .colorNegro{
+    color: black;
+  }
+  
