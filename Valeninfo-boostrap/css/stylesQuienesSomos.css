@@ -3,15 +3,243 @@
     width: 100%;
     height: 400px; /* Ajusta la altura según necesites */
     object-fit: cover; /* Recorta la imagen sin deformarla */
+
 }
 
 .carousel-item img {
     height: 600px; /* Ajusta la altura según necesites */
     object-fit: cover; /* Recorta la imagen sin deformarla */
-   
 }
 
 .modal-body p{
     color: black;
 }
 
+@media (max-width: 768px) {
+    .card {
+        display: block;
+        margin: 0 auto 10%; /* Centra el logo y le da un margen inferior del 3% */
+        text-align: center;
+    }
+}
+.carousel{
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+/* Reset básico para evitar estilos predefinidos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+/* Logo centrado cuando la pantalla es pequeña */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .logo {
+        margin-bottom: 3%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tarjetas personalizadas */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+/* Carrusel */
+/* Carrusel */
+.carousel-item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-radius:10px;
+}
+
+/* Asegura que el contenedor del carrusel ocupe el 80% del ancho disponible y esté centrado */
+.carousel {
+    width: 100%; /* Ajusta el porcentaje para el ancho del carrusel */
+    margin-left: auto; /* Centra el carrusel */
+    margin-right: auto; /* Centra el carrusel */
+    margin-top: 20px; /* Márgenes superior si es necesario */
+}
+
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+/* Estilos personalizados para la sección "Sobre Nosotros" */
+.sobre-nosotros {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-sobre-nosotros {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.texto-sobre-nosotros {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.btn-mas-info {
+    background: #ffcc00;
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.sobre-nosotros {
+    max-width: 1300px; /* Ajusta el ancho */
+    margin: auto;
+    padding: 40px;
+}
+
+.sobre-nosotros .row {
+    display: flex;
+    align-items: center; /* Alinea todo a la misma altura */
+    justify-content: space-between; /* Espaciado uniforme */
+}
+
+.titulo-sobre-nosotros {
+    text-align: center;
+    width: 100%; /* Asegura que el título esté centrado */
+    margin-bottom: 20px;
+}
+
+.texto-sobre-nosotros {
+    flex: 1; /* Ocupa el espacio disponible */
+    text-align: justify;
+}
+
+.imagen-sobre-nosotros {
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen-sobre-nosotros:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .sobre-nosotros .row {
+        flex-direction: column; /* Apila los elementos */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .imagen-sobre-nosotros {
+        display: none;/* Reduce el tamaño en móviles */
+        
+    }
+}
+
+.contenedor-flex {
+    display: flex;
+    align-items: stretch; /* Ambos elementos ocuparán el mismo alto */
+    gap: 20px;
+  }
+
+  /* Sección del acordeón (desplegables) */
+  .accordion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(189, 188, 188, 0.1);
+  }
+
+  .accordion-button {
+    background: linear-gradient(135deg,#3a3a5e, #1e1e2f );
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+
+  .accordion-button:hover {
+    background-color: #b3cfec;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-button span {
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-button:not(.collapsed) span {
+    transform: rotate(180deg);
+  }
+
+  .accordion-body {
+    background: #f8f9fa;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  /* Contenedor de la imagen */
+  .imagen-contenedor {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita que la imagen se desborde */
+  }
+
+  /* La imagen se ajusta para no superar el alto del contenedor */
+  .imagen-contenedor img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(228, 223, 223, 0.2);
+  }
