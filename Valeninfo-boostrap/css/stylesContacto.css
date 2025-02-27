@@ -73,17 +73,7 @@ h1 p{
 
 
 
-/* Navbar personalizado */
-.navbar {
-    background-color: #222 !important;
-}
-.navbar .nav-link {
-    color: #ddd !important;
-    transition: color 0.3s;
-}
-.navbar .nav-link:hover {
-    color: #fff !important;
-}
+
 
 /* Botón personalizado */
 .btn-custom {
@@ -197,3 +187,26 @@ footer {
       font-size: 0.9rem;
     }
   }
+
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica la animación a las migas de pan */
+.breadcrumb {
+    animation: fadeInUp 1.0s ease-out forwards;
+}
+
+/* Aplica la animación a la imagen de fondo y el contenido */
+.container {
+    animation: fadeInUp 1.0s ease-out forwards;
+}
+
+/* Añade un retraso al contenido de la hero para que aparezca después */
