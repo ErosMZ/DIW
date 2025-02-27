@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+body .contenido {
+  padding: 20px;
+}
+body .contenido .titulo {
+  font-size: 24px;
+}
+body .contenido .titulo:not(.destacado) {
+  color: teal;
+}
+body .contenido .titulo.destacado {
+  color: orange;
+}
+body .contenido blockquote {
+  font-style: italic;
+}
+body .contenido p {
+  font-size: 16px;
+}
+body .contenido p::first-line {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+$colorPrimario: orange;
+$colorSecundario: teal;
+$fuentePrincipal: Arial, sans-serif;
+$tamanoTitulo: 24px;
+$tamanoTexto: 16px;
+
+body {
+    font-family: $fuentePrincipal;
+
+    .contenido {
+        padding: 20px;
+
+        .titulo {
+            font-size: $tamanoTitulo;
+
+            &:not(.destacado) {
+                color: $colorSecundario;
+            }
+
+            &.destacado {
+                color: $colorPrimario;
+            }
+        }
+
+        blockquote {
+            font-style: italic;
+        }
+
+        p {
+            font-size: $tamanoTexto;
+
+            &::first-line {
+                font-style: italic;
+            }
+        }
+    }
+}
