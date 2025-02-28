@@ -8,7 +8,7 @@
 .hero {
     height: 85vh; /* Ocupa el 85% de la altura de la pantalla */
     width: 100%;
-    background-image: url('../img/concepto-diseno-web-dibujos_1134-77.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('../img/concepto-diseno-web-dibujos_1134-77.webp'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
