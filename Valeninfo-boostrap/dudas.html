@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/stylesQuienesSomos.css">
+    <link rel="stylesheet" href="./css/stylesDudas.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Quiénes Somos</title>
-   
+    <title>Dudas Frecuentes</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -33,18 +32,383 @@
               Recursos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Inscripciones</a></li>
-              <li><a class="dropdown-item" href="#">Dudas</a></li>
+              <li><a class="dropdown-item" href="inscripciones.html">Inscripciones</a></li>
+              <li><a class="dropdown-item" href="dudas.html">Dudas</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
           </li>
-          
         </ul>
       </div>
     </div>
   </nav>
 
-</body>
-</html>
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+        <li class="breadcrumb-item"><a href="#"> Recursos</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="dudas.html"> Dudas</a></li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Contenido Principal -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h1 class="display-4 fw-bold">Preguntas Frecuentes</h1>
+        <p class="lead">Todo lo que necesitas saber sobre nuestra comunidad tecnológica</p>
+      </div>
+    </div>
+
+    <!-- Buscador de preguntas -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card search-card shadow-sm">
+          <div class="card-body">
+            <div class="input-group">
+              <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+              <input type="text" class="form-control border-start-0" placeholder="Buscar una pregunta..." id="searchFAQ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categorías de preguntas -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="category-tabs">
+          <ul class="nav nav-pills nav-fill" id="faqCategories" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="general-tab" data-bs-toggle="pill" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">
+                <i class="fas fa-info-circle me-2"></i>General
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="membresia-tab" data-bs-toggle="pill" data-bs-target="#membresia" type="button" role="tab" aria-controls="membresia" aria-selected="false">
+                <i class="fas fa-id-card me-2"></i>Membresía
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="eventos-tab" data-bs-toggle="pill" data-bs-target="#eventos" type="button" role="tab" aria-controls="eventos" aria-selected="false">
+                <i class="fas fa-calendar-alt me-2"></i>Eventos
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tecnologia-tab" data-bs-toggle="pill" data-bs-target="#tecnologia" type="button" role="tab" aria-controls="tecnologia" aria-selected="false">
+                <i class="fas fa-laptop-code me-2"></i>Tecnología
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido de preguntas por categoría -->
+    <div class="row">
+      <div class="col-12">
+        <div class="tab-content" id="faqCategoriesContent">
+          <!-- Preguntas generales -->
+          <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+            <div class="accordion accordion-flush" id="accordionGeneral">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#generalOne" aria-expanded="true" aria-controls="generalOne">
+                    ¿Qué es ValenInfo?
+                  </button>
+                </h2>
+                <div id="generalOne" class="accordion-collapse collapse show" data-bs-parent="#accordionGeneral">
+                  <div class="accordion-body">
+                    <p>ValenInfo es una comunidad tecnológica local enfocada en compartir conocimientos, experiencias y recursos sobre diferentes áreas de la tecnología. Nuestro objetivo es crear un espacio colaborativo donde profesionales, estudiantes y entusiastas puedan aprender juntos y mantenerse actualizados en un campo en constante evolución.</p>
+                    <p>Ofrecemos reuniones mensuales, talleres especializados y recursos educativos para todos nuestros miembros.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalTwo" aria-expanded="false" aria-controls="generalTwo">
+                    ¿Dónde están ubicados?
+                  </button>
+                </h2>
+                <div id="generalTwo" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
+                  <div class="accordion-body">
+                    <p>Nuestra sede principal se encuentra en Catarroja, pero organizamos actividades en diferentes localidades de la zona incluyendo Paiporta, Sedaví, Albal y Massanasa.</p>
+                    <p>Las direcciones específicas de los eventos se comunican a los miembros registrados antes de cada actividad.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalThree" aria-expanded="false" aria-controls="generalThree">
+                    ¿Necesito tener conocimientos previos para unirme?
+                  </button>
+                </h2>
+                <div id="generalThree" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
+                  <div class="accordion-body">
+                    <p>¡En absoluto! Nuestra comunidad está abierta a personas con todos los niveles de experiencia, desde principiantes completos hasta profesionales con años de experiencia.</p>
+                    <p>Organizamos actividades con diferentes niveles de dificultad y siempre indicamos claramente el nivel recomendado para cada una. Lo importante es tener interés por aprender y compartir conocimientos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Preguntas sobre membresía -->
+          <div class="tab-pane fade" id="membresia" role="tabpanel" aria-labelledby="membresia-tab">
+            <div class="accordion accordion-flush" id="accordionMembresia">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#membresiaOne" aria-expanded="true" aria-controls="membresiaOne">
+                    ¿Cuáles son los beneficios de cada tipo de membresía?
+                  </button>
+                </h2>
+                <div id="membresiaOne" class="accordion-collapse collapse show" data-bs-parent="#accordionMembresia">
+                  <div class="accordion-body">
+                    <p>Ofrecemos dos tipos principales de membresía:</p>
+                    <ul>
+                      <li><strong>Membresía Estándar (10€/mes):</strong> Incluye acceso a reuniones mensuales, material de estudio básico, participación en foros de discusión y descuentos en talleres especiales.</li>
+                      <li><strong>Membresía VIP (20€/mes):</strong> Incluye todo lo de la membresía estándar más acceso a workshops exclusivos, mentorías personalizadas, certificados de participación y prioridad en la inscripción a eventos.</li>
+                    </ul>
+                    <p>También ofrecemos planes corporativos personalizados para empresas. Puedes encontrar más detalles en nuestra <a href="inscripciones.html">página de inscripciones</a>.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#membresiaTwo" aria-expanded="false" aria-controls="membresiaTwo">
+                    ¿Puedo cancelar mi membresía en cualquier momento?
+                  </button>
+                </h2>
+                <div id="membresiaTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMembresia">
+                  <div class="accordion-body">
+                    <p>Sí, puedes cancelar tu membresía en cualquier momento. No hay contratos de permanencia ni penalizaciones por cancelación.</p>
+                    <p>Para cancelar, simplemente envía un correo electrónico a admin@valeninfo.com con el asunto "Cancelación de membresía" o utiliza la opción correspondiente en tu perfil de usuario.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#membresiaThree" aria-expanded="false" aria-controls="membresiaThree">
+                    ¿Ofrecen descuentos para estudiantes?
+                  </button>
+                </h2>
+                <div id="membresiaThree" class="accordion-collapse collapse" data-bs-parent="#accordionMembresia">
+                  <div class="accordion-body">
+                    <p>Sí, ofrecemos un 15% de descuento en ambos tipos de membresía para estudiantes con identificación válida.</p>
+                    <p>Para obtener el descuento, simplemente presenta tu carnet de estudiante durante el proceso de inscripción o envía una copia a nuestro correo de contacto.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Preguntas sobre eventos -->
+          <div class="tab-pane fade" id="eventos" role="tabpanel" aria-labelledby="eventos-tab">
+            <div class="accordion accordion-flush" id="accordionEventos">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eventosOne" aria-expanded="true" aria-controls="eventosOne">
+                    ¿Con qué frecuencia organizan eventos?
+                  </button>
+                </h2>
+                <div id="eventosOne" class="accordion-collapse collapse show" data-bs-parent="#accordionEventos">
+                  <div class="accordion-body">
+                    <p>Organizamos reuniones generales una vez al mes, normalmente el último jueves de cada mes. Además, programamos talleres especializados aproximadamente cada dos semanas.</p>
+                    <p>También organizamos eventos especiales como hackathons, conferencias y networking que se anuncian con anticipación en nuestro calendario y a través de correo electrónico.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventosTwo" aria-expanded="false" aria-controls="eventosTwo">
+                    ¿Cómo puedo proponer un tema para un evento?
+                  </button>
+                </h2>
+                <div id="eventosTwo" class="accordion-collapse collapse" data-bs-parent="#accordionEventos">
+                  <div class="accordion-body">
+                    <p>¡Nos encanta recibir propuestas de nuestros miembros! Puedes sugerir temas de dos maneras:</p>
+                    <ul>
+                      <li>A través del formulario de sugerencias disponible en tu perfil de usuario</li>
+                      <li>Durante las sesiones de brainstorming que realizamos trimestralmente</li>
+                    </ul>
+                    <p>Si además quieres presentar el tema tú mismo, indica tu disponibilidad y experiencia en el formulario, y nuestro equipo se pondrá en contacto contigo.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventosThree" aria-expanded="false" aria-controls="eventosThree">
+                    ¿Se graban los eventos para verlos después?
+                  </button>
+                </h2>
+                <div id="eventosThree" class="accordion-collapse collapse" data-bs-parent="#accordionEventos">
+                  <div class="accordion-body">
+                    <p>Sí, la mayoría de nuestros eventos se graban y están disponibles en nuestra plataforma para que los miembros puedan verlos posteriormente.</p>
+                    <p>Las grabaciones se suben generalmente dentro de las 48 horas posteriores al evento y permanecen disponibles durante 6 meses. Los miembros VIP tienen acceso ilimitado a todo el archivo histórico de grabaciones.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Preguntas sobre tecnología -->
+          <div class="tab-pane fade" id="tecnologia" role="tabpanel" aria-labelledby="tecnologia-tab">
+            <div class="accordion accordion-flush" id="accordionTecnologia">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tecnologiaOne" aria-expanded="true" aria-controls="tecnologiaOne">
+                    ¿Qué áreas tecnológicas cubren vuestros eventos?
+                  </button>
+                </h2>
+                <div id="tecnologiaOne" class="accordion-collapse collapse show" data-bs-parent="#accordionTecnologia">
+                  <div class="accordion-body">
+                    <p>Cubrimos una amplia variedad de áreas tecnológicas, incluyendo pero no limitado a:</p>
+                    <ul>
+                      <li>Desarrollo web y móvil</li>
+                      <li>Ciberseguridad</li>
+                      <li>Redes y sistemas</li>
+                      <li>Inteligencia artificial y machine learning</li>
+                      <li>Bases de datos y Big Data</li>
+                      <li>Diseño UX/UI</li>
+                      <li>DevOps y metodologías ágiles</li>
+                    </ul>
+                    <p>El contenido se adapta a los intereses de nuestra comunidad, así que siempre estamos abiertos a explorar nuevas áreas tecnológicas.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tecnologiaTwo" aria-expanded="false" aria-controls="tecnologiaTwo">
+                    ¿Ofrecen recursos para aprender a programar desde cero?
+                  </button>
+                </h2>
+                <div id="tecnologiaTwo" class="accordion-collapse collapse" data-bs-parent="#accordionTecnologia">
+                  <div class="accordion-body">
+                    <p>¡Absolutamente! Tenemos varios recursos diseñados específicamente para principiantes:</p>
+                    <ul>
+                      <li>Talleres introductorios mensuales en diferentes lenguajes de programación</li>
+                      <li>Biblioteca de recursos con tutoriales paso a paso</li>
+                      <li>Grupos de estudio para principiantes</li>
+                      <li>Sistema de mentorías donde miembros experimentados apoyan a los principiantes</li>
+                    </ul>
+                    <p>Además, organizamos trimestralmente el evento "Primeros Pasos en Programación" especialmente diseñado para quienes nunca han programado antes.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tecnologiaThree" aria-expanded="false" aria-controls="tecnologiaThree">
+                    ¿Cómo puedo compartir mis proyectos con la comunidad?
+                  </button>
+                </h2>
+                <div id="tecnologiaThree" class="accordion-collapse collapse" data-bs-parent="#accordionTecnologia">
+                  <div class="accordion-body">
+                    <p>Tenemos varias opciones para compartir tus proyectos:</p>
+                    <ul>
+                      <li>Sesiones mensuales de "Demo Day" donde los miembros pueden presentar sus proyectos</li>
+                      <li>Foro de proyectos en nuestra plataforma online</li>
+                      <li>Repositorio compartido en GitHub para proyectos de código abierto</li>
+                      <li>Showcase trimestral con premios para los mejores proyectos</li>
+                    </ul>
+                    <p>Para participar en Demo Day, simplemente inscríbete a través del formulario en tu perfil de usuario con al menos dos semanas de antelación.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario para más dudas -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="card contact-card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <h3 class="card-title">¿No encuentras respuesta a tu pregunta?</h3>
+                <p class="card-text">Envíanos tu duda y te responderemos lo antes posible.</p>
+                <form id="questionForm">
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="pregunta" class="form-label">Tu pregunta</label>
+                    <textarea class="form-control" id="pregunta" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar pregunta</button>
+                </form>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="support-info text-center">
+                  <i class="fas fa-headset support-icon mb-3"></i>
+                  <h4 class="mb-3">También puedes contactarnos directamente</h4>
+                  <p class="mb-1"><i class="fas fa-phone me-2"></i> +34 12 345 67 89</p>
+                  <p class="mb-1"><i class="fas fa-envelope me-2"></i> soporte@valeninfo.com</p>
+                  <p><i class="fas fa-clock me-2"></i> Lunes a viernes, 9:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Contacto</h5>
+          <address>
+            <p><i class="fas fa-map-marker-alt me-2"></i> Calle Catarroja, 123</p>
+            <p><i class="fas fa-phone me-2"></i> +34 12 345 67 89</p>
+            <p><i class="fas fa-envelope me-2"></i> admin@valeninfo.com</p>
+          </address>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="quienesSomos.html" class="text-white">Quienes somos</a></li>
+            <li><a href="inscripciones.html" class="text-white">Inscripciones</a></li>
+            <li><a href="Contacto.html" class="text-white">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Síguenos</h5>
+          <div class="d-flex">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-0">&copy; 2025 Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>

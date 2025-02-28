@@ -1,0 +1,231 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica la animación a las migas de pan */
+.breadcrumb {
+    animation: fadeInUp 1.0s ease-out forwards;
+}
+
+.container {
+    animation: fadeInUp 1.0s ease-out forwards;
+}
+/* Títulos */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: var(--text-light);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards de planes de membresía */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-body {
+    color: var(--text-dark);
+    background-color: var(--card-bg);
+}
+
+.card-header {
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* Membresía Estándar */
+.card .bg-primary {
+    background-color: #0078d4 !important; /* Azul más visible */
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: #0078d4;
+    border-color: #0078d4;
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #005a9e;
+    border-color: #005a9e;
+}
+
+/* Membresía VIP - Estilo dorado */
+.card .border-warning {
+    border: 2px solid var(--gold-color) !important;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.card .bg-warning {
+    background: linear-gradient(135deg, var(--gold-color), var(--gold-dark)) !important;
+    color: #5d4a1f !important; /* Color oscuro para contraste */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo para el botón de membresía VIP */
+.btn-warning {
+    background-color: #ffd700; /* Color dorado */
+    border-color: #d4af37;
+    color: #5d4a1f !important; /* Color de texto oscuro para contraste */
+    font-weight: bold;
+  }
+  
+  .btn-warning:hover {
+    background-color: #d4af37;
+    border-color: #b8860b;
+    color: #5d4a1f !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+/* Plan Corporativo */
+.card .bg-info {
+    background-color: #12819c !important;
+    color: white !important;
+}
+
+.btn-info {
+    background-color: #12819c;
+    border-color: #12819c;
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-info:hover {
+    background-color: #0e6886;
+    border-color: #0e6886;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Formulario de inscripción */
+form {
+    padding: 10px;
+}
+
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: white;
+    box-shadow: 0 0 0 0.25rem rgba(14, 104, 134, 0.25);
+    border-color: var(--secondary-color);
+}
+
+.form-label {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* Footer personalizado */
+footer {
+    background-color: #0a4255 !important;
+    margin-top: 50px !important;
+    border-top: 4px solid var(--accent-color);
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Efectos adicionales */
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Destacar la membresía VIP */
+.card.border-warning .card-title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.card.border-warning {
+    transform: scale(1.02);
+}
+
+.card.border-warning:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+/* Animación de brillo para el VIP */
+@keyframes goldShine {
+    0% {box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);}
+    50% {box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);}
+    100% {box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);}
+}
+
+.card.border-warning {
+    animation: goldShine 3s infinite;
+}
+
+/* Ajuste de espaciado */
+.container.my-5 {
+    padding-top: 20px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Asegurarse de que todos los textos en los botones sean visibles */
+.btn {
+    color: white !important;
+}

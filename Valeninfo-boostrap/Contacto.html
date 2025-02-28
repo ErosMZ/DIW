@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylesContacto.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/stylesContacto.css">
+  <style>
+    body {
+    background-color: #0e6886;
+    color: white;
+  }
+  </style>
   <title>Contacto</title>
 </head>
 <body>
@@ -43,83 +49,73 @@
             <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
           </li>
           
+          
         </ul>
       </div>
     </div>
   </nav>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
-                <li class="breadcrumb-item active"><a href="quienesSomos.html">Quienes somos</a></li>
-            </ol>
-        </nav>
+  <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+            <li class="breadcrumb-item active"><a href="Contacto.html">Contacto</a></li>
+        </ol>
+    </nav>
+</div>
   
 
   <!-- Contenedor principal -->
-  <div class="container my-5 content">
+  <div class="container my-5">
     <div class="row">
-      <!-- Columna izquierda: Formulario -->
-      <div class="col-md-12 border-end pe-4">
-        <h2 class="text-center mb-4">Formulario de Contacto</h2>
+      <div class="col-md-8 mx-auto content">
+        <h2 class="text-center">Formulario de Contacto</h2>
         
         <!-- Formulario de Contacto -->
         <form id="contactForm">
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" required>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-          </div>
-          <!-- Nuevo campo para seleccionar tema -->
-          <div class="mb-3">
-            <label for="tema" class="form-label">Tema</label>
-            <select class="form-select" id="tema" required>
-              <option value="" disabled selected>Selecciona un tema</option>
-              <option value="consulta">Consulta</option>
-              <option value="sugerencia">Sugerencia</option>
-              <option value="queja">Queja</option>
-            </select>
-          </div>
-          <!-- Nuevo campo para adjuntar archivos (opcional) -->
-          <div class="mb-3">
-            <label for="archivo" class="form-label">Adjuntar Archivo (opcional)</label>
-            <input type="file" class="form-control" id="archivo">
-          </div>
-          <!-- Campo para dirección (obligatorio) -->
+          
           <div class="mb-3">
             <label for="direccion" class="form-label">Dirección</label>
             <input type="text" class="form-control" id="direccion" required>
           </div>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Enviar
-          </button>
-        </form>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel text-black"><p> Confirmación de Envío</p></h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body text-black">
-                ¿Está seguro de que desea enviar el formulario?
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="confirmarEnvio">Aceptar</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Rechazar</button>
-              </div>
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="tema" class="form-label">Tema</label>
+              <select class="form-select" id="tema" required>
+                <option value="" disabled selected>Selecciona un tema</option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="queja">Queja</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="archivo" class="form-label">Adjuntar Archivo (opcional)</label>
+              <input type="file" class="form-control" id="archivo">
             </div>
           </div>
-        </div>
+          
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+          
+          <!-- Button trigger modal -->
+          <div class="text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enviar Mensaje
+            </button>
+          </div>
+        </form>
 
         <!-- Alerta de éxito (solo una) -->
         <div id="alertaEnviada" class="alert alert-success mt-4 d-none" role="alert">
@@ -130,12 +126,39 @@
     </div>
   </div>
 
-  <!-- Contenedor Nos Ubicamos -->
+  <!-- Contenedor Información de Contacto -->
   <div class="container mt-5">
     <div class="row">
+      <div class="col-md-4">
+        <div class="contact-info-card text-center">
+          <i class="fas fa-map-marker-alt fa-3x mb-3" style="color: #ff9800;"></i>
+          <h5>Dirección</h5>
+          <p>Calle Ficticia 123, Ciudad, País</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-info-card text-center">
+          <i class="fas fa-phone fa-3x mb-3" style="color: #ff9800;"></i>
+          <h5>Teléfono</h5>
+          <p>+34 123 456 789</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-info-card text-center">
+          <i class="fas fa-envelope fa-3x mb-3" style="color: #ff9800;"></i>
+          <h5>Email</h5>
+          <p>contacto@eventosvalencia.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor Nos Ubicamos -->
+  <div class="container mt-5 mb-5">
+    <div class="row">
       <div class="col-12">
-        <h3 class="text-center mb-4">Nos ubicamos</h3>
-        <div class="embed-responsive embed-responsive-16by9">
+        <h3 class="text-center">Nos ubicamos</h3>
+        <div class="map-container">
           <iframe class="embed-responsive-item" 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14598.644053524105!2d-0.3601530908153165!3d39.46990782632936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60e1f1a6ac4e93%3A0x4b0f9531fced3326!2sValencia!5e0!3m2!1ses!2ses!4v1675353344135!5m2!1ses!2ses" 
                   width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
@@ -145,16 +168,21 @@
     </div>
   </div>
 
-  <!-- Contenedor Información de Contacto -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="text-center mb-4">Información de Contacto</h3>
-        <ul class="list-unstyled text-center mb-4">
-          <li><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</li>
-          <li><strong>Teléfono:</strong> +34 123 456 789</li>
-          <li><strong>Email:</strong> contacto@eventosvalencia.com</li>
-        </ul>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #0e6886;">Confirmación de Envío</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="color: #333;">
+          ¿Está seguro de que desea enviar el formulario?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="confirmarEnvio">Aceptar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Rechazar</button>
+        </div>
       </div>
     </div>
   </div>
